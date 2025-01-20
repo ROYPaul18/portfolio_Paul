@@ -1,20 +1,20 @@
 "use client";
 import React from "react";
 import { useTranslation } from "next-i18next";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { useParams } from "next/navigation";
+// import { useParams } from "next/navigation";
 import { Moon, Sun, Menu, X } from "lucide-react";
 
-type Locale = "fr" | "en";
+// type Locale = "fr" | "en";
 
 interface HeaderProps {
   className?: string;
 }
 
 const Header: React.FC<HeaderProps> = ({ className = "" }) => {
-  const pathname = usePathname();
-  const params = useParams();
+  // const pathname = usePathname();
+  // const params = useParams();
   const { t, i18n } = useTranslation("common");
   const [isDarkMode, setIsDarkMode] = React.useState(false);
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
