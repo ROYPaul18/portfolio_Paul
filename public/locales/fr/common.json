@@ -1,0 +1,21 @@
+{
+    "header": {
+      "projects": "Projets",
+      "services": "Services",
+      "about": "À propos",
+      "idea": "Une idée ?",
+      "language": "fr"
+    },
+    "hero": {
+      "job": "Développeur web Freelance",
+      "location": "basé à Bourges/FR",
+      "idea": "une idée ? Parlons-en",
+      "email": "roypaul.18.pr@gmail.com",
+      "discover": "Me découvrir"
+    },
+    "prejob":{
+      "title":"Les meilleurs projets sur lesquels j'ai pu travailler",
+      "description":"Découvrez ici les projets qui m'ont le plus passionné. Je serais heureux de vous présenter d'autres réalisations si vous le souhaitez. Seriez-vous intéressé(e) ?",
+      "buttonText":"Tous mes projets"
+    }
+  }

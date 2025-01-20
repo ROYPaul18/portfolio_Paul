@@ -1,0 +1,22 @@
+{
+    "header": {
+      "projects": "Projects",
+      "services": "Services",
+      "about": "About",
+      "idea": "Got an idea?",
+      "language": "en"
+    },
+    "hero": {
+      "job": "Freelance web Developer",
+      "location": "based in Bourges/FR",
+      "idea": "any idea? Let's talk about it",
+      "email": "roypaul.18.pr@gmail.com",
+      "discover": "Discover myself"
+    },
+    "prejob":{
+      "title":"The best projects I've ever worked on",
+      "descriptio":"Discover here the projects that excited me the most. I would be happy to show you other creations if you wish. Would you be interested?",
+      "buttonText":"All my projects"
+    }
+}
+  
