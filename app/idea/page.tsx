@@ -1,11 +1,16 @@
-import React from 'react'
-import Header from '../ui/header'
+import React from "react";
+import Header from "../ui/header";
+import Footer from "../ui/footer";
+import Idea from "../ui/idee/Idea";
+
 const Page = () => {
   return (
     <div>
       <Header />
+      <Idea />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;

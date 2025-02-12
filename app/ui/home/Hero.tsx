@@ -1,4 +1,5 @@
-"use client";
+'use client';
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,55 +13,23 @@ const Hero: React.FC<HeroProps> = ({ className = "" }) => {
   const { t } = useTranslation("common");
 
   return (
-    <section
-      className={`container mx-auto py-12 md:py-40 bg-background dark:bg-background-dark ${className}`}
-    >
-      <div className="flex flex-col items-center gap-8 max-w-6xl mx-auto">
-        {/* Image pour Mobile - Affichée en premier */}
-        <div className="w-full max-w-[280px] md:hidden">
-          <div className="relative aspect-square rounded-full overflow-hidden ring-4 ring-primary/10 dark:ring-primary-dark/10">
-            <Image
-              src="/img/Paul.png"
-              alt="Photo de Paul Roy"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
-        </div>
-
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between w-full gap-32">
-          {/* Contenu textuel */}
-          <div className="flex-1 min-h-[400px] flex flex-col justify-center space-y-6 text-center md:text-left">
-            <div>
-            <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-primary dark:text-primary-dark leading-tight">
+    <section className={`w-full h-screen px-6 md:px-12 lg:px-24 text-blanc ${className}`}>
+      <div className="w-full h-full flex flex-col justify-between py-52">
+        {/* Top Content */}
+        <div className="flex justify-between items-start w-full">
+          {/* Left Side - Title */}
+          <div className="max-w-2xl">
+            <h1 className="text-5xl md:text-8xl lg:text-8xl font-medium text-blanc dark:text-primary-dark mb-4">
               {t("hero.job")}
+              <span className="block text-base md:text-lg lg:text-xl mt-2 text-blanc dark:text-foreground-dark/60 font-normal">
+                {t("hero.location")}
+              </span>
             </h1>
-            <p className="text-lg md:text-xl text-foreground/60 dark:text-foreground-dark/60">
-              {t("hero.location")}
-            </p>
-            </div>
-            <div className="space-y-2">
-              <p className="text-lg md:text-xl text-foreground dark:text-foreground-dark">
-                {t("hero.idea")}
-              </p>
-              <p className="text-base md:text-lg font-medium text-foreground dark:text-foreground-dark">
-                {t("hero.email")}
-              </p>
-            </div>
-            {/* Bouton Discover pour Mobile */}
-            <div className="md:hidden pt-4">
-              <Link
-                href="/about"
-                className="inline-block px-6 py-3 text-primary dark:text-primary-dark text-lg border-2 border-primary dark:border-primary-dark rounded-md hover:bg-primary dark:hover:bg-primary-dark hover:text-background dark:hover:text-background-dark transition-all duration-300"              >
-                {t("hero.discover")}
-              </Link>
-            </div>
           </div>
 
-          {/* Image et Bouton pour Desktop */}
-          <div className="flex-1 flex flex-col items-center gap-6 min-h-[400px] justify-center">
-            <div className="relative w-[300px] h-[300px] aspect-square rounded-full overflow-hidden ring-4 ring-primary/10 dark:ring-primary-dark/10">
+          {/* Right Side - Image */}
+          <div className="hidden md:block">
+            <div className="relative w-72 h-72 lg:w-96 lg:h-96  overflow-hidden">
               <Image
                 src="/img/Paul.png"
                 alt="Photo de Paul Roy"
@@ -69,12 +38,40 @@ const Hero: React.FC<HeroProps> = ({ className = "" }) => {
                 priority
               />
             </div>
-            <Link
-              href="/about"
-              className="px-8 py-4 text-primary dark:text-primary-dark text-xl"
-            >
-              {t("hero.discover")}
-            </Link>
+          </div>
+        </div>
+
+        {/* Bottom Content */}
+        <div className="flex justify-between items-end w-full">
+          {/* Left Side - Contact */}
+          <div className="space-y-2">
+            <p className="text-lg md:text-xl text-blanc dark:text-foreground-dark">
+              {t("hero.idea")}
+            </p>
+            <p className="text-base md:text-lg text-blanc dark:text-foreground-dark">
+              {t("hero.email")}
+            </p>
+          </div>
+
+          {/* Right Side - Discover Link */}
+          <Link
+            href="/about"
+            className="text-lg md:text-xl text-blanc dark:text-primary-dark hover:underline"
+          >
+            {t("hero.discover")}
+          </Link>
+        </div>
+
+        {/* Mobile Image - Only visible on mobile */}
+        <div className="md:hidden fixed top-1/2 right-4 transform -translate-y-1/2">
+          <div className="relative w-32 h-32 rounded-full overflow-hidden">
+            <Image
+              src="/img/Paul.png"
+              alt="Photo de Paul Roy"
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
         </div>
       </div>

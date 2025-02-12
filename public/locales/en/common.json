@@ -6,6 +6,18 @@
       "idea": "Got an idea?",
       "language": "en"
     },
+    "footer": {
+      "info": "That's all for now",
+      "contactMe": "Do you want to contact me?",
+      "contactMeInfo":"Don't hesitate!",
+      "email": "E-mail address :",
+      "emaillink": "roypaul.18.pr@gmail.com",
+      "telephone": "My number",
+      "telephonenumber":"07 82 68 10 39",
+      "rs": "My social networks",
+      "lk": "Linkdin",
+      "gt": "Github"
+    },   
     "hero": {
       "job": "Freelance web Developer",
       "location": "based in Bourges/FR",
@@ -14,9 +26,79 @@
       "discover": "Discover myself"
     },
     "prejob":{
-      "title":"The best projects I've ever worked on",
-      "descriptio":"Discover here the projects that excited me the most. I would be happy to show you other creations if you wish. Would you be interested?",
-      "buttonText":"All my projects"
+      "title": {
+        "line1": "Web Development",
+        "line2": "Web Application",
+        "line3": "With NEXT.JS"
+      },
+      "description": "I create minimalist and elegant websites, with meticulous attention to detail. Passionate about development, I strive to design impactful and captivating experiences through each of my designs. My goal is to maximize the visual and functional impact of each project while maintaining refined simplicity.",
+      "links": {
+        "services": "My services",
+        "contact": "Have an idea?"
+      }
+    },
+    "project_home_1" : {
+      "name" :"Beady-Ink",
+      "type": "Web application/Showcase site",
+      "subtitle":"arnzefnzeokgnekg gkezngzeng en kgzeog ze ngzeok gzeo g  no ezgknoz n",
+      "description_pt1":"Development of an interactive showcase site and a tailor-made web application to present the client's artistic creations (tattoos and nails).",
+      "description_pt2":"Users can browse a dynamic gallery, create an account, book an appointment online and leave reviews.",
+      "description_pt3":"An intuitive dashboard has been designed to allow the customer to manage her activity: adding photos and services, managing schedules and appointments, monitoring customer reviews. The site is fully responsive and designed for easy use, even without technical skills."
+    },
+    "project_home_2" : {
+      "name" :"Devoteam",
+      "type": "Web application",
+      "subtitle":"arnzefnzeokgnekg gkezngzeng en kgzeog ze ngzeok gzeo g  no ezgknoz n",
+      "description_pt1":"I developed an interactive dashboard to visualize and analyze attrition trends in the Devoteam company, supervised by a doctoral student.",
+      "description_pt2":"Using randomized data, I designed dynamic graphs to identify precise correlations (seniority, departments, types of contracts).",
+      "description_pt3":"The project includes the creation of models on Figma and development with React (front-end) and Node.js (back-end). This work strengthened my skills in data visualization, web development, and complex project management."
+    },
+    "preservice":{
+      "info":"What you can expect from me:",
+      "description":"I create minimalist and elegant websites, with meticulous attention to detail. Passionate about development, I strive to design impactful and captivating experiences through each of my designs. My goal is to maximize visual impact and functionality of each project, while maintaining a refined simplicity.",
+      "buttonText":"Learn more"
+    },
+    "service_1": {
+    "type": "Showcase site",
+    "subtitle": "A professional site to present your activity and attract your customers",
+    "info_1": "Custom design",
+    "info_2": "Adaptive visual (tablet, computer and smartphone)",
+    "info_3": "SEO at the top!",
+    "info_4": "Basic functionality (Google maps, form)"
+  },
+  "service_2": {
+    "type": "Application",
+    "subtitle": "A tailor-made solution for your advanced needs",
+    "info_1": "Custom design",
+    "info_2": "Adaptive visual (tablet, computer and smartphone)",
+    "info_3": "SEO at the top!",
+    "info_4": "Basic functionality (Google maps, form)",
+    "info_5":"Advanced functionality (appointment booking, dynamic content, registration, connection or other)",
+    "info_6":"Secure connection (Authentication and management of user profiles)"
+  },
+  "service_3": {
+    "type": "E-commerce website",
+    "subtitle":"Une solution sur mesure pour vos besoins avancés",
+    "info_1":"Online store creation (An intuitive platform to present and sell your products or services.)",
+    "info_2":"Secure payment solutions (Integration of Stripe, PayPal, or other gateways.)",
+    "info_3": "SEO at the top!",
+    "info_4":"Basic functionality (Google maps, form)",
+    "info_5":"Advanced functionality (appointment booking, dynamic content, registration, connection or other)",
+    "info_6":"Optimized UX/UI design Smooth navigation and attractive design to offer your customers an optimal user experience."
+  },
+  "services": {
+    "site_vitrine": {
+      "number": "[01]",
+      "title": "Showcase Website",
+      "description": "A showcase website allows you to strengthen your online presence, attract new customers ...",
+      "link": "Showcase website"
+    },
+    "application_web": {
+      "number": "[02]",
+      "title": "Web Application",
+      "description": "A custom web application to digitize your processes and improve your productivity ...",
+      "link": "Web application"
     }
+  }
 }
   

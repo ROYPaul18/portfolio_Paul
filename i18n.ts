@@ -9,19 +9,18 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-      fr: {
-        common: commonFR
-      },
-      en: {
-        common: commonEN
-      }
+      fr: { common: commonFR },
+      en: { common: commonEN }
     },
-    lng: 'fr', // Langue par défaut
+    lng: 'fr',
     fallbackLng: 'fr',
     interpolation: {
       escapeValue: false
     },
     defaultNS: 'common'
   })
+  .then(() => console.log('i18next chargé avec succès'))
+  .catch(err => console.error('Erreur de chargement i18next', err));
+
 
 export default i18n

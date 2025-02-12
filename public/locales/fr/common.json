@@ -1,21 +1,110 @@
 {
-    "header": {
-      "projects": "Projets",
-      "services": "Services",
-      "about": "À propos",
-      "idea": "Une idée ?",
-      "language": "fr"
+  "header": {
+    "projects": "Projets",
+    "services": "Services",
+    "about": "À propos",
+    "idea": "Une idée ?",
+    "language": "fr"
+  },
+  "footer": {
+    "info": "C'est tout pour l'instant",
+    "contactMe": "Vous voulez me contacter ?",
+    "contactMeInfo": "N'hésitez pas !",
+    "email": "E-mail address :",
+    "emaillink": "roypaul.18.pr@gmail.com",
+    "telephone": "Mon numéros de téléphone",
+    "telephonenumber": "07 82 68 10 39",
+    "rs": "My social networks",
+    "lk": "Linkdin",
+    "gt": "Github"
+  },
+  "hero": {
+    "job": "Développeur web Freelance",
+    "location": "basé à Bourges/FR",
+    "idea": "une idée ? Parlons-en",
+    "email": "roypaul.18.pr@gmail.com",
+    "discover": "Me découvrir"
+  },
+  "prejob": {
+    "title": {
+      "line1": "Développement Web",
+      "line2": "Application Web",
+      "line3": "En NEXT.JS"
     },
-    "hero": {
-      "job": "Développeur web Freelance",
-      "location": "basé à Bourges/FR",
-      "idea": "une idée ? Parlons-en",
-      "email": "roypaul.18.pr@gmail.com",
-      "discover": "Me découvrir"
+    "description": "Je crée des sites web minimalistes et élégants, avec une attention méticuleuse aux détails. Passionné par le développement, je m'efforce de concevoir des expériences impactantes et captivantes à travers chacun de mes designs. Mon objectif est de maximiser l'impact visuel et fonctionnel de chaque projet, tout en maintenant une simplicité raffinée.",
+    "links": {
+      "services": "Mes services",
+      "contact": "Une idée ?"
     },
-    "prejob":{
-      "title":"Les meilleurs projets sur lesquels j'ai pu travailler",
-      "description":"Découvrez ici les projets qui m'ont le plus passionné. Je serais heureux de vous présenter d'autres réalisations si vous le souhaitez. Seriez-vous intéressé(e) ?",
-      "buttonText":"Tous mes projets"
-    }
+    "buttonText": "Tous mes projets"
+  },
+  "project_home_1": {
+    "name": "Beady-Ink",
+    "type": "Application web/Site vitrine",
+    "description_pt1": "Développement d'un site vitrine interactif et d'une application web sur mesure pour présenter les réalisations artistiques de la cliente (tatouages et ongles).",
+    "description_pt2": "Les utilisateurs peuvent naviguer dans une galerie dynamique, créer un compte, prendre rendez-vous en ligne et laisser des avis.",
+    "description_pt3": "Un dashboard intuitif a été conçu pour permettre à la cliente de gérer son activité : ajout de photos et prestations, gestion des horaires et des rendez-vous, suivi des avis clients. Le site est entièrement responsive et pensé pour une utilisation facile, même sans compétences techniques."
+  },
+  "project_home_2": {
+    "name": "Devoteam",
+    "type": "Application web",
+    "description_pt1": "J'ai développé un dashboard interactif pour visualiser et analyser les tendances d'attrition dans l'entreprise Devoteam, encadré par un doctorant.",
+    "description_pt2": "À partir de données randomisées, j'ai conçu des graphiques dynamiques permettant d'identifier des corrélations précises (ancienneté, départements, types de contrats).",
+    "description_pt3": "Le projet inclut la création de maquettes sur Figma et le développement avec React (front-end) et Node.js (back-end). Ce travail a renforcé mes compétences en visualisation de données, développement web, et gestion de projets complexes."
+  },
+  "preservice": {
+    "info": "Ce que vous pouvez attendre de moi : ",
+    "description": "Je crée des sites web minimalistes et élégants, avec une attention méticuleuse aux détails. Passionné par le développement, je m'efforce de concevoir des expériences impactantes et captivantes à travers chacun de mes designs. Mon objectif est de maximiser l'impact visuel et fonctionnel de chaque projet, tout en maintenant une simplicité raffinée.",
+    "buttonText": "En savoir plus "
+  },
+  "service_1": {
+    "type": "Site vitrine",
+    "subtitle": "Un site professionnel pour présenter votre activité et attirer vos clients",
+    "info_1": "Design sur mesure",
+    "info_2": "Visuel adaptatif (tablette, ordinateur et smartphone)",
+    "info_3": "SEO au top !",
+    "info_4": "Fonctionnalité basique (Google maps, formulaire)"
+  },
+  "service_2": {
+    "type": "Application",
+    "subtitle": "Une solution sur mesure pour vos besoins avancés",
+    "info_1": "Design sur mesure",
+    "info_2": "Visuel adaptatif (tablette, ordinateur et smartphone)",
+    "info_3": "SEO au top !",
+    "info_4": "Fonctionnalité basique (Google maps, formulaire)",
+    "info_5":"Fonctionnalité avancé (prise de rendez-vous, contenu dynamique, inscription, connexion ou autre)",
+    "info_6":"Connexion sécurisée (Authentification et gestion des profils utilisateurs)"
+  },
+  "service_3": {
+    "type": "Site E-commerce",
+    "subtitle":"Une solution sur mesure pour vos besoins avancés",
+    "info_1":"Création de boutique en ligne (Une plateforme intuitive pour présenter et vendre vos produits ou services.)",
+    "info_2":"Solutions de paiement sécurisées (Intégration de Stripe, PayPal, ou d'autres passerelles. )",
+    "info_3": "Optimisation du référencement (SEO)",
+    "info_4":"Fonctionnalité basique (Google maps, formulaire)",
+    "info_5":"Fonctionnalité avancé (prise de rendez-vous, contenu dynamique, inscription, connexion ou autre)",
+    "info_6":"Design optimisé UX/UI Une navigation fluide et un design attractif pour offrir à vos clients une expérience utilisateur optimale."
+  },
+  "site_vitrine": {
+    "number": "01",
+    "type": "Site vitrine",
+    "subtitle": "Un site vitrine pour vous permet de renforcer votre présence en ligne, d'attirer de nouveaux clients ...",
+    "infos": [
+      "Design personnalisé",
+      "Responsive",
+      "SEO optimisé",
+      "Performance"
+    ]
+  },
+  "application_web": {
+    "number": "02",
+    "type": "Application web",
+    "subtitle": "Une application web sur mesure pour digitaliser vos processus et améliorer votre productivité ...",
+    "infos": [
+      "Architecture moderne",
+      "Interface intuitive",
+      "Sécurisé",
+      "Évolutif"
+    ]
   }
+}

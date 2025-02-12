@@ -6,17 +6,19 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: 'class', // Active le mode sombre via la classe 'dark'
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
         // Couleurs de base
-        'deepblue': '#000217',
-        
-        // Couleurs thématiques
+        'deepblue': '#00010F',
+        'lightblue':"#ECEEFF",
+        'greytext':"#9A9A9A",
+        'blanc':"#F7F3E9",
+        'grisbleu':"#0C0D1F",
         background: {
           DEFAULT: '#F6F7FF', // Light mode
-          dark: '#0F1729', // Dark mode
+          dark: '#000217', // Dark mode
         },
         foreground: {
           DEFAULT: '#000217', // Light mode

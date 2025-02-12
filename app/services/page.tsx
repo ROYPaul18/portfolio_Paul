@@ -1,10 +1,13 @@
-import React from 'react'
-import Header from '../ui/header'
+import Header from "../ui/header";
+import Footer from "../ui/footer";
+import Services from "../ui/services/Services";
 
 const Page = () => {
   return (
-    <div>
+    <div className="bg-deepblue">
       <Header />
+      <Services />
+      <Footer />
     </div>
   )
 }
