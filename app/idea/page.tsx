@@ -5,7 +5,7 @@ import Idea from "../ui/idee/Idea";
 
 const Page = () => {
   return (
-    <div>
+    <div className="bg-deepblue ">
       <Header />
       <Idea />
       <Footer />

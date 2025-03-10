@@ -1,66 +1,80 @@
 {
-    "header": {
-      "projects": "Projects",
-      "services": "Services",
-      "about": "About",
-      "idea": "Got an idea?",
-      "language": "en"
+  "header": {
+    "projects": "Projects",
+    "services": "Services,",
+    "about": "About me",
+    "idea": "Contact",
+    "language": "en",
+    "home": "Home, ",
+    "name": "Paul ROY",
+    "greeting": "Hello, my name is"
+  },
+  "footer": {
+    "info": "That's all for now",
+    "contactMe": "Do you want to contact me?",
+    "contactMeInfo": "Don't hesitate!",
+    "email": "E-mail address :",
+    "emaillink": "roypaul.18.pr@gmail.com",
+    "telephone": "My number",
+    "telephonenumber": "07 82 68 10 39",
+    "rs": "My social networks",
+    "lk": "Linkdin",
+    "gt": "Github",
+    "links": "Links",
+    "home": "Home",
+    "about": "About",
+    "idea": "Got an idea?",
+    "services": "My services",
+    "siteVitrine": "Showcase website",
+    "applicationWeb": "Web application",
+    "otherLinks": "Other links",
+    "allRightsReserved": "All rights reserved",
+    "legalMentions": "Legal mentions",
+    "privacyPolicy": "Privacy policy"
+  },
+  "hero": {
+    "job": "Freelance web Developer",
+    "location": "based in Bourges/FR",
+    "idea": "any idea? Let's talk about it",
+    "email": "roypaul.18.pr@gmail.com",
+    "discover": "Discover myself"
+  },
+  "prejob": {
+    "title": {
+      "line1": "Web Development",
+      "line2": "Web Application",
+      "line3": "With NEXT.JS"
     },
-    "footer": {
-      "info": "That's all for now",
-      "contactMe": "Do you want to contact me?",
-      "contactMeInfo":"Don't hesitate!",
-      "email": "E-mail address :",
-      "emaillink": "roypaul.18.pr@gmail.com",
-      "telephone": "My number",
-      "telephonenumber":"07 82 68 10 39",
-      "rs": "My social networks",
-      "lk": "Linkdin",
-      "gt": "Github"
-    },   
-    "hero": {
-      "job": "Freelance web Developer",
-      "location": "based in Bourges/FR",
-      "idea": "any idea? Let's talk about it",
-      "email": "roypaul.18.pr@gmail.com",
-      "discover": "Discover myself"
-    },
-    "prejob":{
-      "title": {
-        "line1": "Web Development",
-        "line2": "Web Application",
-        "line3": "With NEXT.JS"
-      },
-      "description": "I create minimalist and elegant websites, with meticulous attention to detail. Passionate about development, I strive to design impactful and captivating experiences through each of my designs. My goal is to maximize the visual and functional impact of each project while maintaining refined simplicity.",
-      "links": {
-        "services": "My services",
-        "contact": "Have an idea?"
-      }
-    },
-    "project_home_1" : {
-      "name" :"Beady-Ink",
-      "type": "Web application/Showcase site",
-      "subtitle":"arnzefnzeokgnekg gkezngzeng en kgzeog ze ngzeok gzeo g  no ezgknoz n",
-      "description_pt1":"Development of an interactive showcase site and a tailor-made web application to present the client's artistic creations (tattoos and nails).",
-      "description_pt2":"Users can browse a dynamic gallery, create an account, book an appointment online and leave reviews.",
-      "description_pt3":"An intuitive dashboard has been designed to allow the customer to manage her activity: adding photos and services, managing schedules and appointments, monitoring customer reviews. The site is fully responsive and designed for easy use, even without technical skills."
-    },
-    "project_home_2" : {
-      "name" :"Devoteam",
-      "type": "Web application",
-      "subtitle":"arnzefnzeokgnekg gkezngzeng en kgzeog ze ngzeok gzeo g  no ezgknoz n",
-      "description_pt1":"I developed an interactive dashboard to visualize and analyze attrition trends in the Devoteam company, supervised by a doctoral student.",
-      "description_pt2":"Using randomized data, I designed dynamic graphs to identify precise correlations (seniority, departments, types of contracts).",
-      "description_pt3":"The project includes the creation of models on Figma and development with React (front-end) and Node.js (back-end). This work strengthened my skills in data visualization, web development, and complex project management."
-    },
-    "preservice":{
-      "info":"What you can expect from me:",
-      "description":"I create minimalist and elegant websites, with meticulous attention to detail. Passionate about development, I strive to design impactful and captivating experiences through each of my designs. My goal is to maximize visual impact and functionality of each project, while maintaining a refined simplicity.",
-      "buttonText":"Learn more"
-    },
-    "service_1": {
+    "description": "I create minimalist and elegant websites, with meticulous attention to detail. Passionate about development, I strive to design impactful and captivating experiences through each of my designs. My goal is to maximize the visual and functional impact of each project while maintaining refined simplicity.",
+    "links": {
+      "services": "My services",
+      "contact": "Have an idea?"
+    }
+  },
+  "project_home_1": {
+    "name": "Beady-Ink",
+    "type": "Web application/Showcase site",
+    "subtitle": "arnzefnzeokgnekg gkezngzeng en kgzeog ze ngzeok gzeo g  no ezgknoz n",
+    "description_pt1": "Development of an interactive showcase site and a tailor-made web application to present the client's artistic creations (tattoos and nails).",
+    "description_pt2": "Users can browse a dynamic gallery, create an account, book an appointment online and leave reviews.",
+    "description_pt3": "An intuitive dashboard has been designed to allow the customer to manage her activity: adding photos and services, managing schedules and appointments, monitoring customer reviews. The site is fully responsive and designed for easy use, even without technical skills."
+  },
+  "project_home_2": {
+    "name": "Devoteam",
+    "type": "Web application",
+    "subtitle": "arnzefnzeokgnekg gkezngzeng en kgzeog ze ngzeok gzeo g  no ezgknoz n",
+    "description_pt1": "I developed an interactive dashboard to visualize and analyze attrition trends in the Devoteam company, supervised by a doctoral student.",
+    "description_pt2": "Using randomized data, I designed dynamic graphs to identify precise correlations (seniority, departments, types of contracts).",
+    "description_pt3": "The project includes the creation of models on Figma and development with React (front-end) and Node.js (back-end). This work strengthened my skills in data visualization, web development, and complex project management."
+  },
+  "preservice": {
+    "info": "What you can expect from me:",
+    "description": "I create minimalist and elegant websites, with meticulous attention to detail. Passionate about development, I strive to design impactful and captivating experiences through each of my designs. My goal is to maximize visual impact and functionality of each project, while maintaining a refined simplicity.",
+    "buttonText": "Learn more"
+  },
+  "service_1": {
     "type": "Showcase site",
-    "subtitle": "A professional site to present your activity and attract your customers",
+    "subtitle": "I specialize in creating websites that are not only responsive and optimized for SEO but also designed for exceptional performance and speed. My dynamic solutions ensure that your site remains stable and functional.",
     "info_1": "Custom design",
     "info_2": "Adaptive visual (tablet, computer and smartphone)",
     "info_3": "SEO at the top!",
@@ -68,37 +82,181 @@
   },
   "service_2": {
     "type": "Application",
-    "subtitle": "A tailor-made solution for your advanced needs",
+    "subtitle": "I develop modern, high-performance web applications that combine responsiveness, speed, and stability. My goal is to ensure a smooth user experience through dynamic and scalable solutions.",
     "info_1": "Custom design",
     "info_2": "Adaptive visual (tablet, computer and smartphone)",
     "info_3": "SEO at the top!",
     "info_4": "Basic functionality (Google maps, form)",
-    "info_5":"Advanced functionality (appointment booking, dynamic content, registration, connection or other)",
-    "info_6":"Secure connection (Authentication and management of user profiles)"
+    "info_5": "Advanced functionality (appointment booking, dynamic content, registration, connection or other)",
+    "info_6": "Secure connection (Authentication and management of user profiles)"
   },
   "service_3": {
     "type": "E-commerce website",
-    "subtitle":"Une solution sur mesure pour vos besoins avancés",
-    "info_1":"Online store creation (An intuitive platform to present and sell your products or services.)",
-    "info_2":"Secure payment solutions (Integration of Stripe, PayPal, or other gateways.)",
+    "subtitle": "Une solution sur mesure pour vos besoins avancés",
+    "info_1": "Online store creation (An intuitive platform to present and sell your products or services.)",
+    "info_2": "Secure payment solutions (Integration of Stripe, PayPal, or other gateways.)",
     "info_3": "SEO at the top!",
-    "info_4":"Basic functionality (Google maps, form)",
-    "info_5":"Advanced functionality (appointment booking, dynamic content, registration, connection or other)",
-    "info_6":"Optimized UX/UI design Smooth navigation and attractive design to offer your customers an optimal user experience."
+    "info_4": "Basic functionality (Google maps, form)",
+    "info_5": "Advanced functionality (appointment booking, dynamic content, registration, connection or other)",
+    "info_6": "Optimized UX/UI design Smooth navigation and attractive design to offer your customers an optimal user experience."
   },
-  "services": {
-    "site_vitrine": {
-      "number": "[01]",
-      "title": "Showcase Website",
-      "description": "A showcase website allows you to strengthen your online presence, attract new customers ...",
-      "link": "Showcase website"
-    },
-    "application_web": {
-      "number": "[02]",
-      "title": "Web Application",
-      "description": "A custom web application to digitize your processes and improve your productivity ...",
-      "link": "Web application"
+  "site_vitrine": {
+    "number": "01",
+    "type": "Showcase website",
+    "subtitle": "I develop modern, efficient and optimized web applications, combining responsiveness, speed and stability. My goal is to ensure a smooth user experience through dynamic and scalable solutions."
+  },
+  "application_web": {
+    "number": "02",
+    "type": "Web application",
+    "subtitle": "I develop modern, efficient and optimized web applications, combining responsiveness, speed and stability. My goal is to ensure a smooth user experience through dynamic and scalable solutions."
+  },
+  "best_project": {
+    "title_1": "Discover my projects that",
+    "title_2": "impress both clients and",
+    "title_3": "clients.",
+    "description": "My projects showcase the work I have done. Take a look at my portfolio, highlighting the diversity of my web design and application development projects.",
+    "project_1_type": "Web Application",
+    "project_1_name": "Beaudy Ink",
+    "project_1_slug": "beaudy-ink",
+    "project_1_techno": [
+      "Typescript",
+      "Next, React",
+      "Tailwindcss",
+      "Prisma",
+      "PostgreSQL"
+    ],
+    "project_1_fonctionnalitées": [
+      "User management",
+      "Service management",
+      "Admin dashboard",
+      "Appointment booking",
+      "Review system",
+      "Opening hours management"
+    ],
+    "project_1_description": "Discover Beaudy Ink, a professional tattoo and nail salon in Soye-en-Septaine and Flavigny, offering unique and artistic designs.",
+    "project_2_type": "Webflow Development, Web Design, Branding",
+    "project_2_name": "Dashboard Devoteam",
+    "project_2_slug": "dashboard-devoteam",
+    "project_2_description": "As part of my internship, alongside a PhD student, I was able to create an interactive dashboard aimed at reducing the attrition rate within Devoteam.",
+    "project_2_techno": [
+      "Typescript",
+      "Next, React",
+      "Tailwindcss",
+      "Prisma",
+      "PostgreSQL"
+    ],
+    "project_2_fonctionnalitées": [
+      "User management",
+      "Service management",
+      "Admin dashboard",
+      "Appointment booking",
+      "Review system",
+      "Opening hours management"
+    ],
+    "project_3_type": "Webflow Development",
+    "project_3_name": "Imvizar",
+    "project_3_slug": "imvizar",
+    "project_3_description": "Immersive storytelling experiences using augmented reality. Blending technology and storytelling for unforgettable journeys that captivate and engage audiences."
+  },
+  "approach": {
+    "apprendre": "Learn who you are",
+    "echange": "First exchange with the client to understand their needs, goals, and measurement requirements.",
+    "analyse": "Analysis & wireframe",
+    "benchmark": "Benchmarking competitors and the industry. Creating a wireframe to define the structure. Presentation and client feedback.",
+    "conception": "Design of the final mockup",
+    "design": "Creating the final design (UI) based on the validated wireframe. Feedback and adjustments with the client.",
+    "developpement": "Product Development",
+    "integration": "Integration and development of the site or application.",
+    "mise_en_ligne": "Deployment & Go Live",
+    "validation": "Going live with the final product after validation.",
+    "maintenance": "Maintenance & Updates (Optional)",
+    "evolutions": "Possibility of updates and evolutions according to client needs.",
+    "title": "My approach to your project",
+    "description": "I am ready to help you! Whether you want to launch a new project, improve your existing site, request a quote or discuss a potential collaboration, do not hesitate to contact me."
+  },
+  "service": {
+    "site_vitrine": "Showcase Site",
+    "application_web": "Web Application",
+    "ready_to_help": "I am ready to help you! Whether you want to launch a new project, improve your existing site, request a quote, or discuss a potential collaboration, feel free to contact me."
+  },
+  "project": {
+    "title": {
+      "site-vitrine": "Project of showcase site completed",
+      "application-web": "Project of web application completed"
     }
+  },
+  "application_web_service": {
+    "title": "Web Application",
+    "description": "For high-performance and scalable digital solutions tailored to your needs.",
+    "custom_development": "Custom development (Next.js, Prisma, PostgreSQL, etc.)",
+    "user_interface": "Intuitive and ergonomic user interface.",
+    "seo_optimization": "SEO optimization.",
+    "performance_optimization": "Performance optimization.",
+    "secure_api": "Secure API and database management.",
+    "hosting_deployment": "Hosting and deployment (Vercel, AWS, etc.).",
+    "documentation": "Comprehensive technical documentation."
+  },
+  "site-vitrine_service": {
+    "title": "Showcase Site",
+    "description": "Take it to the next level with more power and enhanced features.",
+    "unique_design": "Unique and responsive design.",
+    "development": "Development with Next.js and React.",
+    "seo_optimization": "SEO optimization.",
+    "hosting_domain": "Hosting and domain name (optional).",
+    "advanced_security": "Advanced security (HTTPS, anti-hacking protection, etc.).",
+    "contact_form": "Contact form & social media integration.",
+    "initial_support": "Initial support and maintenance."
+  },
+  "about": {
+    "title": "About — I am Paul, a freelance web developer dedicated to helping businesses unlock their growth potential.",
+    "subtitle_1": "Since my high school years, I have been passionate about web development, and today, I specialize in creating custom web experiences tailored to the needs of each client. What drives me is providing the best digital solutions to businesses by combining creativity and technical expertise.",
+    "subtitle_2": "Since I started my freelance activity three months ago, I have had the opportunity to collaborate with two professional clients, assisting them in realizing their digital projects. My goal is to help businesses achieve their ambitions through personalized and effective solutions. Through each project, I strive to exceed expectations and create a lasting impact.",
+    "link_1": "My work",
+    "link_2": "Got an idea?",
+    "link_3": "My CV",
+    "stat_title_1": "Projects Completed",
+    "stat_title_2": "Clients",
+    "stat_title_3": "Months of Freelancing",
+    "stat_title_4": "Years of Experience"
+  },
+  "service_page": {
+    "title": "Services - Custom website design in React/Next.js, with tailored solutions. I transform your ideas into high-performing and engaging digital experiences.",
+    "subtitle": "I transform your ideas into captivating, high-performing, and intuitive digital experiences designed to engage your audience and grow your business. My approach combines creativity and technical expertise to ensure a website that is both aesthetically pleasing and perfectly functional. The goal: to provide an optimal user experience, strengthen your online presence, and help you achieve your strategic ambitions. Let's create something exceptional together!",
+    "link": "My projects",
+    "link2": "Got an idea?",
+    "title_1": "Web Application",
+    "subtitle_1_pt_1": "I offer custom Webflow development solutions for startups and creative/digital agencies from various industries, providing a seamless and efficient way to bring your vision to life. With Webflow, I can create a highly customized website that reflects the unique needs and goals of your business.",
+    "subtitle_1_pt_2": "With a focus on user experience, responsive design, and optimal performance, your Webflow website will be designed to drive growth and success for your business. So why settle for a generic template when you can have a bespoke and creative Webflow website that truly sets you apart from the competition?",
+    "link_1_1": "Web Application",
+    "title_2": "Web Application",
+    "subtitle_2_pt_1": "I offer custom Webflow development solutions for startups and creative/digital agencies from various industries, providing a seamless and efficient way to bring your vision to life. With Webflow, I can create a highly customized website that reflects the unique needs and goals of your business.",
+    "subtitle_2_pt_2": "With a focus on user experience, responsive design, and optimal performance, your Webflow website will be designed to drive growth and success for your business. So why settle for a generic template when you can have a bespoke and creative Webflow website that truly sets you apart from the competition?",
+    "link_2_2": "Web Application"
+  },
+  "idea": {
+    "title":"Contactez-moi",
+    "contact": "Contact me",
+    "e-mail": "roypaul.18.pr@gmail.com",
+    "num": "07 82 68 10 39",
+    "details": "Project Details",
+    "q_help": "How can I help you?",
+    "q_budget": "What is your budget?",
+    "pages": "Number of pages?",
+    "q_delay": "Deadline?",
+    "your_info": "Your information",
+    "your_email": "Your email",
+    "name_entreprise": "Your name",
+    "name_site": "Your company name",
+    "project": "Your website address",
+    "your_name": "Tell me about your project",
+    "submit": "Submit",
+    "sending": "Sending...",
+    "success": "Request sent successfully!",
+    "error": "Sending error",
+    "name": "Your name",
+    "email": "Your email",
+    "company": "Your company name",
+    "website": "Your website address",
+    "projectDetails": "Tell me about your project"
   }
 }
-  

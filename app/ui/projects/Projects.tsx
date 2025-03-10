@@ -3,13 +3,13 @@ import { useState } from "react";
 import Link from "next/link";
 import { projects } from "../../../utils/project";
 
-interface Project {
-  name: string;
-  type: string;
-  category: string;
-  year: number;
-  slug: string;
-}
+// interface Project {
+//   name: string;
+//   type: string;
+//   category: string;
+//   year: number;
+//   slug: string;
+// }
 
 const ALL_CATEGORIES = "Toutes";
 const categories = [

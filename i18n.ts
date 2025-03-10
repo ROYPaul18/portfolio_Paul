@@ -1,26 +1,20 @@
-import i18n from 'i18next'
-import { initReactI18next } from 'react-i18next'
-
-// Import des fichiers de traduction
-import commonFR from '@/public/locales/fr/common.json'
-import commonEN from '@/public/locales/en/common.json'
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import Backend from 'i18next-http-backend';
 
 i18n
+  .use(Backend) // Utilisation du backend HTTP
   .use(initReactI18next)
   .init({
-    resources: {
-      fr: { common: commonFR },
-      en: { common: commonEN }
-    },
     lng: 'fr',
-    fallbackLng: 'fr',
-    interpolation: {
-      escapeValue: false
-    },
-    defaultNS: 'common'
+    fallbackLng: 'en',
+    defaultNS: 'common',
+    interpolation: { escapeValue: false },
+    backend: {
+      loadPath: '/locales/{{lng}}/{{ns}}.json' // Chemin des fichiers JSON
+    }
   })
   .then(() => console.log('i18next chargé avec succès'))
   .catch(err => console.error('Erreur de chargement i18next', err));
 
-
-export default i18n
+export default i18n;

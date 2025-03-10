@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${figtree.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-deepblue flex justify-center` }
+        className={`${figtree.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-deepblue flex justify-center scroll-smooth` }
       >
         <I18nProvider>
         {children}
