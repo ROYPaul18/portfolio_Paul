@@ -11,7 +11,7 @@ i18n
     defaultNS: 'common',
     interpolation: { escapeValue: false },
     backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json' // Chemin des fichiers JSON
+      loadPath: '/locales/{{lng}}/{{ns}}.json'
     }
   })
   .then(() => console.log('i18next chargé avec succès'))

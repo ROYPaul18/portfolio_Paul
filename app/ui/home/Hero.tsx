@@ -34,7 +34,7 @@ const Hero: React.FC<HeroProps> = ({ className = "" }) => {
 
       {/* Filtre vert vintage */}
       <div className="absolute bottom-5 left-5 text-blanc text-7xl 2xl:text-9xl font-bold leading-tight z-0">
-        {t("hero.job_pt1")}
+        {t("hero.job")}
       </div>
       <div className="absolute inset-0 bg-[#223322] mix-blend-overlay opacity-40"></div>
 

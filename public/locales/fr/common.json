@@ -7,7 +7,8 @@
     "name": "Paul ROY",
     "idea": "Contact",
     "projects": "Projets",
-    "language": "fr"
+    "language": "fr",
+    "dispo":"Disponible pour un nouveau projet"
   },
   "footer": {
     "info": "C'est tout pour le moment",
@@ -33,7 +34,7 @@
     "privacyPolicy": "Politique de confidentialité"
   },
   "hero": {
-    "job_pt1": "Développeur web freelance",
+    "job": "Développeur web freelance",
     "location": "basé à Bourges/FR",
     "idea": "Une idée en tête ? Parlons-en",
     "email": "roypaul.18.pr@gmail.com",
@@ -138,19 +139,17 @@
     "project_2_slug": "dashboard-devoteam",
     "project_2_description": "Dans le cadre de mon stage, aux côtés d'un doctorant, j'ai pu créer un tableau de bord interactif visant à réduire le taux d'attrition au sein de Devoteam.",
     "project_2_techno": [
-      "Typescript",
-      "Next, React",
-      "Tailwindcss",
-      "Prisma",
-      "PostgreSQL"
+      "Javascript",
+      "React",
+      "Node.JS",
+      "Axios",
+      "Tailwindcss"
     ],
     "project_2_fonctionnalitées": [
-      "Gestion des utilisateurs",
-      "Gestion des services",
-      "Tableau de bord administrateur",
-      "Prise de rendez-vous",
-      "Système d'avis",
-      "Gestion des horaires d'ouverture"
+      "Analyse de données randomisées",
+      "Graphique en fonction de KPI",
+      "Dark Mode",
+      "Filtre par Pays, Tranche d'âge, Sexe, Tranche de dates",
     ],
     "project_3_type": "Développement Webflow",
     "project_3_name": "Imvizar",
@@ -253,20 +252,20 @@
     "link_2_2": "Application Web"
   },
   "idea": {
-    "contact":"Contacter moi",
-    "e-mail":"roypaul.18.pr@gmail.com",
-    "num":"07 82 68 10 39",
+    "contact": "Contacter moi",
+    "e-mail": "roypaul.18.pr@gmail.com",
+    "num": "07 82 68 10 39",
     "details": "Détails du projet",
     "q_help": "Sur quoi puis-je vous aider ?",
     "q_budget": "Quel est votre budget ?",
     "pages": "Nombre de pages ?",
     "q_delay": "Délai ?",
     "your_info": "Vos informations",
-    "your_email":"Votre e-mail",
-    "name_entreprise":"Votre nom",
-    "name_site":"Nom de votre entreprise",
-    "project":"Adresse de votre site",
-    "your_name":"Parlez-moi de votre projet",
+    "your_email": "Votre e-mail",
+    "name_entreprise": "Votre nom",
+    "name_site": "Nom de votre entreprise",
+    "project": "Adresse de votre site",
+    "your_name": "Parlez-moi de votre projet",
     "submit": "Soumettre",
     "sending": "Envoi en cours...",
     "success": "Demande envoyée avec succès !",
@@ -275,7 +274,18 @@
     "email": "Votre e-mail",
     "company": "Nom de votre entreprise",
     "website": "Adresse de votre site",
-    "projectDetails": "Parlez-moi de votre projet"
+    "projectDetails": "Parlez-moi de votre projet",
+    "button_values": {
+      "project_type": ["Site Vitrine", "Application Web", "Autre"],
+      "delay": ["<1 mois", "1-3 mois", "3-6 mois", "+6 mois"]
+    }
+  },
+  "project_page": {
+    "title":"Mes projets — Une sélection de mes réalisations les plus abouties. Chaque projet témoigne de mon apprentissage, de ma progression et de mes compétences. Ils illustrent mon engagement à créer et à innover avec passion.",
+    "subtitle":"Je transforme vos idées en expériences numériques captivantes, performantes et intuitives, conçues pour engager votre audience et faire grandir votre activité. Mon approche allie créativité et expertise technique afin de garantir un site web à la fois esthétique et parfaitement fonctionnel. L&apos;objectif : offrir une expérience utilisateur optimale, renforcer votre présence en ligne et vous aider à atteindre vos ambitions stratégiques. Créons ensemble quelque chose d&apos;exceptionnel !",
+    "link": "Mes projets",
+    "link2": "Une idée ?"
   }
+
   
 }

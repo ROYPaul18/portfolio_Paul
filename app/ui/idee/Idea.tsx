@@ -2,8 +2,10 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-
+import { useTranslation } from "next-i18next";
 const Idea = () => {
+  const { t } = useTranslation("common");
+
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [selectedBudget, setSelectedBudget] = useState<string | null>(null);
   const [selectedPages, setSelectedPages] = useState<string | null>(null);
@@ -66,47 +68,93 @@ const Idea = () => {
   };
 
   const getButtonClass = (selected: string | null, item: string): string => {
-    return selected === null || selected === item ? "text-blanc" : "text-gris/60";
+    return selected === null || selected === item
+      ? "text-blanc"
+      : "text-gris/60";
   };
 
   return (
     <section className="text-white mt-20 px-4 2xl:px-8">
       <div className="grid grid-cols-2">
-        <div className="flex flex-col justify-between fixed top-12 mt-12 w-1/4">
-          <h1 className="text-5xl font-medium">Contactez-moi</h1>
+        <div className="flex flex-col justify-between fixed top-12 2xl:top-24 mt-12 w-1/2">
+          <h1 className="text-5xl font-medium">{t("idea.contact")}</h1>
           <div className="mt-12 text-lg">
             <Link
-              href="/services/site-vitrine"
-              className="group relative inline-flex items-center gap-2 mt-4 md:mt-6 text-lg md:text-base 2xl:text-2xl py-1 transition-colors"
+              href="/idea"
+              className="group relative text-sm md:text-base 2xl:text-2xl flex items-center transition-colors"
             >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="size-5 md:size-6 mr-2 group-hover:text-black relative z-10"
+                viewBox="0 0 13 12"
+                fill="none"
+                preserveAspectRatio="xMidYMid meet"
+                aria-hidden="true"
+                role="img"
+              >
+                <path
+                  d="M9.95614 9.02338H8.33283C8.08933 9.02338 7.927 9.18571 7.927 9.42921V10.6467C7.927 10.8902 7.76467 11.0525 7.52117 11.0525H5.89785C5.65435 11.0525 5.49202 10.8902 5.49202 10.6467V9.42921C5.49202 9.18571 5.65435 9.02338 5.89785 9.02338H6.99359C7.50088 9.02338 7.927 8.63784 7.927 8.11027V7.40007C7.927 7.15657 8.08933 6.99424 8.33283 6.99424H9.95614C10.4431 6.99424 10.5649 6.38549 10.5649 5.99996C10.5649 5.61442 10.4431 5.00568 9.95614 5.00568H8.33283C8.08933 5.00568 7.927 4.84334 7.927 4.59985V3.88965C7.927 3.36207 7.50088 2.97653 6.99359 2.97653H5.89785C5.65435 2.97653 5.49202 2.8142 5.49202 2.5707V1.35322C5.49202 1.10972 5.65435 0.947388 5.89785 0.947388H7.52117C7.76467 0.947388 7.927 1.10972 7.927 1.35322V2.5707C7.927 2.8142 8.08933 2.97653 8.33283 2.97653H9.95614C10.1996 2.97653 10.362 3.13886 10.362 3.38236V4.07227C10.362 4.57956 10.7881 4.98538 11.2954 4.98538H12.594C12.8375 4.98538 12.9999 5.14772 12.9999 5.39121V6.6087C12.9999 6.8522 12.8375 7.01453 12.594 7.01453H11.2954C10.7881 7.01453 10.362 7.42036 10.362 7.92764V8.61755C10.362 8.86105 10.1996 9.02338 9.95614 9.02338Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M0.5 5.2563H8.04289C8.2871 5.2563 8.4499 5.37938 8.4499 5.564V6.4717C8.4499 6.65632 8.2871 6.7794 8.04289 6.7794H0.5C0.255789 6.7794 0.0929826 6.65632 0.0929826 6.4717V5.564C0.0929826 5.37938 0.255789 5.2563 0.5 5.2563Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
               <span className="relative z-10 group-hover:text-black">
                 roypaul.18.pr@gmail.com
               </span>
+              <span className="absolute left-0 bottom-0 w-0 h-full bg-white transition-all duration-700 ease-in-out group-hover:w-full"></span>
             </Link>
             <Link
-              href="/services/site-vitrine"
-              className="group relative inline-flex items-center gap-2 mt-4 md:mt-6 text-lg md:text-base 2xl:text-2xl py-1 transition-colors"
+              href="/idea"
+              className="group relative text-sm md:text-base 2xl:text-2xl flex items-center transition-colors"
             >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="size-5 md:size-6 mr-2 group-hover:text-black relative z-10"
+                viewBox="0 0 13 12"
+                fill="none"
+                preserveAspectRatio="xMidYMid meet"
+                aria-hidden="true"
+                role="img"
+              >
+                <path
+                  d="M9.95614 9.02338H8.33283C8.08933 9.02338 7.927 9.18571 7.927 9.42921V10.6467C7.927 10.8902 7.76467 11.0525 7.52117 11.0525H5.89785C5.65435 11.0525 5.49202 10.8902 5.49202 10.6467V9.42921C5.49202 9.18571 5.65435 9.02338 5.89785 9.02338H6.99359C7.50088 9.02338 7.927 8.63784 7.927 8.11027V7.40007C7.927 7.15657 8.08933 6.99424 8.33283 6.99424H9.95614C10.4431 6.99424 10.5649 6.38549 10.5649 5.99996C10.5649 5.61442 10.4431 5.00568 9.95614 5.00568H8.33283C8.08933 5.00568 7.927 4.84334 7.927 4.59985V3.88965C7.927 3.36207 7.50088 2.97653 6.99359 2.97653H5.89785C5.65435 2.97653 5.49202 2.8142 5.49202 2.5707V1.35322C5.49202 1.10972 5.65435 0.947388 5.89785 0.947388H7.52117C7.76467 0.947388 7.927 1.10972 7.927 1.35322V2.5707C7.927 2.8142 8.08933 2.97653 8.33283 2.97653H9.95614C10.1996 2.97653 10.362 3.13886 10.362 3.38236V4.07227C10.362 4.57956 10.7881 4.98538 11.2954 4.98538H12.594C12.8375 4.98538 12.9999 5.14772 12.9999 5.39121V6.6087C12.9999 6.8522 12.8375 7.01453 12.594 7.01453H11.2954C10.7881 7.01453 10.362 7.42036 10.362 7.92764V8.61755C10.362 8.86105 10.1996 9.02338 9.95614 9.02338Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M0.5 5.2563H8.04289C8.2871 5.2563 8.4499 5.37938 8.4499 5.564V6.4717C8.4499 6.65632 8.2871 6.7794 8.04289 6.7794H0.5C0.255789 6.7794 0.0929826 6.65632 0.0929826 6.4717V5.564C0.0929826 5.37938 0.255789 5.2563 0.5 5.2563Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
               <span className="relative z-10 group-hover:text-black">
                 07 82 68 10 39
               </span>
+              <span className="absolute left-0 bottom-0 w-0 h-full bg-white transition-all duration-700 ease-in-out group-hover:w-full"></span>
             </Link>
           </div>
         </div>
 
         <div className="mt-16 col-start-2">
           <h2 className="text-xl 2xl:text-4xl font-medium border-b border-blanc pb-4 mb-2 2xl:mb-12">
-            Les détails de ce projet
+            {t("idea.details")}
           </h2>
 
           <form onSubmit={handleSubmit}>
-            <p className="text-gris/60 mt-6 text-base 2xl:text-2xl">Sur quoi puis-je vous aider ?</p>
+            <p className="text-gris/60 mt-6 text-base 2xl:text-2xl">
+              {" "}
+              {t("idea.q_help")}{" "}
+            </p>
             <div className="flex space-x-4 mt-2">
               {["Site Vitrine", "Application Web", "Autre"].map((item) => (
                 <button
                   key={item}
                   type="button"
-                  className={`text-xs 2xl:text-2xl transition ${getButtonClass(selectedCategory, item)}`}
+                  className={`text-xs 2xl:text-2xl transition ${getButtonClass(
+                    selectedCategory,
+                    item
+                  )}`}
                   onClick={() => setSelectedCategory(item)}
                 >
                   {item}
@@ -114,27 +162,37 @@ const Idea = () => {
               ))}
             </div>
 
-            <p className="text-gris/60 mt-6 text-base 2xl:text-2xl">Quel est votre budget ?</p>
+            <p className="text-gris/60 mt-6 text-base 2xl:text-2xl">
+              {t("idea.q_budget")}{" "}
+            </p>
             <div className="flex space-x-4 mt-2">
-              {["<1500€", "1500€-3000€", "3000€-5000€", "+5000€"].map((item) => (
-                <button
-                  key={item}
-                  type="button"
-                  className={`text-xs 2xl:text-2xl transition ${getButtonClass(selectedBudget, item)}`}
-                  onClick={() => setSelectedBudget(item)}
-                >
-                  {item}
-                </button>
-              ))}
+              {["<1500€", "1500€-3000€", "3000€-5000€", "+5000€"].map(
+                (item) => (
+                  <button
+                    key={item}
+                    type="button"
+                    className={`text-xs 2xl:text-2xl transition ${getButtonClass(
+                      selectedBudget,
+                      item
+                    )}`}
+                    onClick={() => setSelectedBudget(item)}
+                  >
+                    {item}
+                  </button>
+                )
+              )}
             </div>
 
-            <p className="text-gris/60 mt-6 2xl:text-2xl">Nombre de pages ?</p>
+            <p className="text-gris/60 mt-6 2xl:text-2xl">{t("idea.pages")}</p>
             <div className="flex space-x-4 mt-2">
               {["1-3", "3-6", "6-10", "10+"].map((item) => (
                 <button
                   key={item}
                   type="button"
-                  className={`text-xs 2xl:text-2xl transition ${getButtonClass(selectedPages, item)}`}
+                  className={`text-xs 2xl:text-2xl transition ${getButtonClass(
+                    selectedPages,
+                    item
+                  )}`}
                   onClick={() => setSelectedPages(item)}
                 >
                   {item}
@@ -142,13 +200,18 @@ const Idea = () => {
               ))}
             </div>
 
-            <p className="text-gris/60 mt-6 2xl:text-2xl">Délai ?</p>
+            <p className="text-gris/60 mt-6 2xl:text-2xl">
+              {t("idea.q_delay")}
+            </p>
             <div className="flex space-x-4 mt-2">
               {["<1 mois", "1-3 mois", "3-6 mois", "+6 mois"].map((item) => (
                 <button
                   key={item}
                   type="button"
-                  className={`text-xs 2xl:text-2xl transition ${getButtonClass(selectedDelay, item)}`}
+                  className={`text-xs 2xl:text-2xl transition ${getButtonClass(
+                    selectedDelay,
+                    item
+                  )}`}
                   onClick={() => setSelectedDelay(item)}
                 >
                   {item}
@@ -157,15 +220,15 @@ const Idea = () => {
             </div>
 
             <h2 className="text-xl 2xl:text-4xl font-medium border-b border-blanc pb-4 mt-24 mb-2 2xl:mb-12">
-              Vos informations
+              {t("idea.your_info")}
             </h2>
             <div className="mt-4 space-y-2 2xl:space-y-12 border-b">
               {[
-                { label: "Votre nom", key: "name" },
-                { label: "Votre e-mail", key: "email" },
-                { label: "Nom de votre entreprise", key: "company" },
-                { label: "Adresse de votre site", key: "website" },
-                { label: "Parlez-moi de votre projet", key: "projectDetails" },
+                { label: t("idea.name_entreprise"), key: "name" },
+                { label: t("idea.your_email"), key: "email" },
+                { label: t("idea.company"), key: "company" },
+                { label: t("idea.name_site"), key: "website" },
+                { label: t("idea.project"), key: "projectDetails" },
               ].map(({ label, key }) => (
                 <input
                   key={key}
@@ -185,14 +248,22 @@ const Idea = () => {
               className="w-full bg-grisbleu text-white py-6 2xl:py-14 text-lg 2xl:text-4xl mt-6 transition disabled:opacity-50"
               disabled={loading}
             >
-              {loading ? "Envoi en cours..." : "Soumettre"}
+              {loading ? t("idea.sending") : t("idea.submit")}
             </button>
           </form>
         </div>
       </div>
 
-      {success && <div className="fixed bottom-5 right-5 bg-green-500 text-white px-4 py-2 rounded-lg">Demande envoyée avec succès !</div>}
-      {error && <div className="fixed bottom-5 right-5 bg-red-500 text-white px-4 py-2 rounded-lg">{error}</div>}
+      {success && (
+        <div className="fixed bottom-5 right-5 bg-green-500 text-white px-4 py-2 rounded-lg">
+          {t("idea.success")}
+        </div>
+      )}
+      {error && (
+        <div className="fixed bottom-5 right-5 bg-red-500 text-white px-4 py-2 rounded-lg">
+          {t("idea.error")}
+        </div>
+      )}
     </section>
   );
 };

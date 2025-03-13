@@ -6,7 +6,7 @@ import Footer from "./ui/footer";
 import Services from "./ui/home/Services";
 export default function Home() {
   return (
-    <div className="py-2 px-8 2xl:py-8  bg-deepblue scroll-smooth">
+    <div className="py-2 px-2 lg:px-4 2xl:px-12  bg-deepblue scroll-smooth">
       <Header />
       <Hero />
       <Prejob />

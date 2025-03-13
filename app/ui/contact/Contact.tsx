@@ -17,7 +17,7 @@ const About = () => {
           <div className="hidden md:block md:w-1/2"></div>
           
           {/* Colonne droite - pleine largeur sur mobile, moitié sur desktop */}
-          <div className="w-full md:w-1/2 text-base 2xl:text-2xl">
+          <div className="w-full md:w-1/2 text-base 2xl:text-3xl">
             {/* Description */}
             <p className="text-gris/60 leading-relaxed">
               {t("about.subtitle_1")}
@@ -27,14 +27,14 @@ const About = () => {
             </p>
             
             {/* Liens - flexibles verticalement sur mobile, horizontalement sur desktop */}
-            <div className="flex flex-col md:flex-row justify-start mt-12 md:mt-24 space-y-4 md:space-y-0 md:space-x-12 text-base 2xl:text-2xl">
+            <div className="flex flex-col md:flex-row justify-start mt-12 md:mt-24 space-y-4 md:space-y-0 md:space-x-12 text-base 2xl:text-3xl">
               <Link
-                href="/work"
+                href="/projects"
                 className="group relative text-sm md:text-base 2xl:text-2xl flex items-center transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="size-5 md:size-6 mr-2 group-hover:text-black relative z-10"
+                  className="size-6 2xl:size-8 md:size-6 mr-2 group-hover:text-black relative z-10"
                   viewBox="0 0 13 12"
                   fill="none"
                   preserveAspectRatio="xMidYMid meet"
@@ -61,7 +61,7 @@ const About = () => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="size-5 md:size-6 mr-2 group-hover:text-black relative z-10"
+                  className="size-6 2xl:size-8 md:size-6 mr-2 group-hover:text-black relative z-10"
                   viewBox="0 0 13 12"
                   fill="none"
                   preserveAspectRatio="xMidYMid meet"
@@ -82,14 +82,14 @@ const About = () => {
                 </span>
                 <span className="absolute left-0 bottom-0 w-0 h-full bg-white transition-all duration-700 ease-in-out group-hover:w-full"></span>
               </Link>
-              <Link
-                href="/idea"
+              <a
+              href="/Paul_ROY_CV.pdf"
                 className="group relative text-sm md:text-base 2xl:text-2xl flex items-center transition-colors"
-                download
+                download="Paul_ROY_CV"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="size-5 md:size-6 mr-2 group-hover:text-black relative z-10"
+                  className="size-5 md:size-6 2xl:size-8  mr-2 group-hover:text-black relative z-10"
                   viewBox="0 0 13 12"
                   fill="none"
                   preserveAspectRatio="xMidYMid meet"
@@ -109,7 +109,7 @@ const About = () => {
                   {t("about.link_3")}
                 </span>
                 <span className="absolute left-0 bottom-0 w-0 h-full bg-white transition-all duration-700 ease-in-out group-hover:w-full"></span>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -126,10 +126,10 @@ const About = () => {
               key={index}
               className="bg-grisbleu p-4 md:p-6 2xl:p-14 flex flex-col justify-between items-start"
             >
-              <h2 className="text-4xl md:text-5xl 2xl:text-6xl font-bold mb-6 md:mb-16">
+              <h2 className="text-4xl md:text-5xl 2xl:text-7xl font-bold mb-6 md:mb-16">
                 {item.number}
               </h2>
-              <p className="text-gris/60 text-base md:text-lg 2xl:text-2xl">{item.label}</p>
+              <p className="text-gris/60 text-base md:text-lg 2xl:text-3xl">{item.label}</p>
             </div>
           ))}
         </div>

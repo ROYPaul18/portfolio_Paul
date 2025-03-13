@@ -7,7 +7,8 @@
     "language": "en",
     "home": "Home, ",
     "name": "Paul ROY",
-    "greeting": "Hello, my name is"
+    "greeting": "Hello, my name is",
+    "dispo": "Available for a new project"
   },
   "footer": {
     "info": "That's all for now",
@@ -146,12 +147,10 @@
       "PostgreSQL"
     ],
     "project_2_fonctionnalitées": [
-      "User management",
-      "Service management",
-      "Admin dashboard",
-      "Appointment booking",
-      "Review system",
-      "Opening hours management"
+      "Randomized Data Analysis",
+      "Chart Based on KPIs",
+      "Dark Mode",
+      "Filter by Country, Age Group, Gender, Date Range"
     ],
     "project_3_type": "Webflow Development",
     "project_3_name": "Imvizar",
@@ -234,11 +233,10 @@
     "link_2_2": "Web Application"
   },
   "idea": {
-    "title":"Contactez-moi",
     "contact": "Contact me",
     "e-mail": "roypaul.18.pr@gmail.com",
     "num": "07 82 68 10 39",
-    "details": "Project Details",
+    "details": "Project details",
     "q_help": "How can I help you?",
     "q_budget": "What is your budget?",
     "pages": "Number of pages?",
@@ -257,6 +255,25 @@
     "email": "Your email",
     "company": "Your company name",
     "website": "Your website address",
-    "projectDetails": "Tell me about your project"
+    "projectDetails": "Tell me about your project",
+    "button_values": {
+      "project_type": [
+        "Showcase Website",
+        "Web Application",
+        "Other"
+      ],
+      "delay": [
+        "<1 month",
+        "1-3 monreths",
+        "3-6 months",
+        "+6 months"
+      ]
+    }
+  },
+  "project_page": {
+    "title": "My Projects — A selection of my most accomplished work. Each project reflects my learning, growth, and skills. They showcase my commitment to creating and innovating with passion.",
+    "subtitle": "I transform your ideas into captivating, high-performing, and intuitive digital experiences designed to engage your audience and grow your business. My approach combines creativity and technical expertise to ensure a website that is both aesthetically pleasing and perfectly functional. The goal: to provide an optimal user experience, strengthen your online presence, and help you achieve your strategic ambitions. Let's create something exceptional together!",
+    "link": "My projects",
+    "link2": "Got an idea?"
   }
 }

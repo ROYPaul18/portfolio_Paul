@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Footer = () => {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("common", { useSuspense: false });
   const pathname = usePathname();
 
   const linkClass = (href: string) =>

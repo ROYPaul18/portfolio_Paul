@@ -30,7 +30,7 @@ const Services = () => {
 
               <div className="flex flex-col sm:flex-row justify-start mt-6 md:mt-10 space-y-4 sm:space-y-0 sm:space-x-6 md:space-x-12 text-base md:text-lg 2xl:text-3xl">
                 <Link
-                  href="/about"
+                  href="/projects"
                   className="group relative inline-flex items-center gap-2 mt-4 md:mt-6 text-lg md:text-base py-1 transition-colors"
                 >
                   <svg
@@ -56,7 +56,7 @@ const Services = () => {
                 </Link>
                 <Link
                   href="/idea"
-                  className="group relative inline-flex items-center gap-2 mt-4 md:mt-6 text-lg md:text-base py-1 transition-colors sm:ml-6 md:ml-12"
+                  className="group relative inline-flex items-center gap-2 mt-4 md:mt-6 text-lg md:text-base py-1 transition-colors"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

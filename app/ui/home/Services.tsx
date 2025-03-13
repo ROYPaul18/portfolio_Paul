@@ -72,17 +72,17 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
             </motion.h2>
 
             <div className="flex flex-col gap-10 md:gap-20">
-              <p className="text-xs md:text-sm 2xl:text-2xl text-gris/60 leading-relaxed ">
+              <p className="text-xs md:text-sm 2xl:text-3xl text-gris/60 leading-relaxed ">
                 {t(subtitle)}
               </p>
               <motion.div>
                 <Link
                   href={link}
-                  className="group relative inline-flex items-center gap-2 mt-4 md:mt-6 text-lg md:text-base 2xl:text-2xl transition-colors text-blanc"
+                  className="group relative inline-flex items-center gap-2 mt-4 md:mt-6 text-lg md:text-base 2xl:text-3xl transition-colors text-blanc"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="size-6 mr-2 transition-colors group-hover:text-deepblue relative z-10"
+                    className="size-6 2xl:size-8 mr-2 transition-colors group-hover:text-deepblue relative z-10"
                     viewBox="0 0 13 12"
                     aria-hidden="true"
                     role="img"
