@@ -8,7 +8,8 @@
     "idea": "Contact",
     "projects": "Projets",
     "language": "fr",
-    "dispo":"Disponible pour un nouveau projet"
+    "dispo":"Disponible pour un nouveau projet",
+    "quickLink":"Quick Link"
   },
   "footer": {
     "info": "C'est tout pour le moment",
@@ -149,7 +150,7 @@
       "Analyse de données randomisées",
       "Graphique en fonction de KPI",
       "Dark Mode",
-      "Filtre par Pays, Tranche d'âge, Sexe, Tranche de dates",
+      "Filtre par Pays, Tranche d'âge, Sexe, Tranche de dates"
     ],
     "project_3_type": "Développement Webflow",
     "project_3_name": "Imvizar",

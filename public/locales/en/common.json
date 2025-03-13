@@ -8,7 +8,8 @@
     "home": "Home, ",
     "name": "Paul ROY",
     "greeting": "Hello, my name is",
-    "dispo": "Available for a new project"
+    "dispo": "Available for a new project",
+    "quickLink":"Quick Link"
   },
   "footer": {
     "info": "That's all for now",
