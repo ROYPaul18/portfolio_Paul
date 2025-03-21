@@ -19,10 +19,10 @@ const About = () => {
           {/* Colonne droite - pleine largeur sur mobile, moitié sur desktop */}
           <div className="w-full md:w-1/2 text-base 2xl:text-3xl">
             {/* Description */}
-            <p className="text-gris/60 leading-relaxed">
+            <p className="text-gris/60">
               {t("about.subtitle_1")}
             </p>
-            <p className="text-gris/60 leading-relaxed mt-4">
+            <p className="text-gris/60  mt-4">
               {t("about.subtitle_2")}
             </p>
             

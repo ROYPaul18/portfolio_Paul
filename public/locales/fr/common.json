@@ -8,8 +8,8 @@
     "idea": "Contact",
     "projects": "Projets",
     "language": "fr",
-    "dispo":"Disponible pour un nouveau projet",
-    "quickLink":"Quick Link"
+    "dispo": "Disponible pour un nouveau projet",
+    "quickLink": "Quick Link"
   },
   "footer": {
     "info": "C'est tout pour le moment",
@@ -226,30 +226,28 @@
   },
   "about": {
     "title": "À propos — Je suis Paul, un développeur Web freelance, dédié à aider les entreprises à libérer leur potentiel de croissance.",
-    "subtitle_1":" Depuis mes années de lycée, je suis passionné par le développement web, et aujourd’hui, je me spécialise dans la création d’expériences web sur mesure adaptées aux besoins de chaque client. Ce qui m’anime, c’est de proposer les meilleures solutions digitales aux entreprises en combinant créativité et expertise technique.",
-    "subtitle_2":"Depuis que j’ai commencé mon activité de freelance il y a trois mois, j’ai eu l’opportunité de collaborer avec deux clients professionnels, en les accompagnant dans la réalisation de leurs projets numériques. Mon objectif est d’aider les entreprises à atteindre leurs ambitions grâce à des solutions personnalisées et efficaces. À travers chaque projet, je cherche à dépasser les attentes et à créer un impact durable.",
-    "link_1":"Mon travail",
-    "link_2":"Une idée ?",
-    "link_3":"Mon CV",
-    "stat_title_1":"Projets Réalisés",
-    "stat_title_2":"Clients",
-    "stat_title_3":"mois de Freelancing",
-    "stat_title_4":"années d'Expériences"
+    "subtitle_1": " Depuis mes années de lycée, je suis passionné par le développement web, et aujourd’hui, je me spécialise dans la création d’expériences web sur mesure adaptées aux besoins de chaque client. Ce qui m’anime, c’est de proposer les meilleures solutions digitales aux entreprises en combinant créativité et expertise technique.",
+    "subtitle_2": "Depuis que j’ai commencé mon activité de freelance il y a trois mois, j’ai eu l’opportunité de collaborer avec deux clients professionnels, en les accompagnant dans la réalisation de leurs projets numériques. Mon objectif est d’aider les entreprises à atteindre leurs ambitions grâce à des solutions personnalisées et efficaces. À travers chaque projet, je cherche à dépasser les attentes et à créer un impact durable.",
+    "link_1": "Mon travail",
+    "link_2": "Une idée ?",
+    "link_3": "Mon CV",
+    "stat_title_1": "Projets Réalisés",
+    "stat_title_2": "Clients",
+    "stat_title_3": "mois de Freelancing",
+    "stat_title_4": "années d'Expériences"
   },
-"service_page": {
+  "service_page": {
     "title": "Services - Conception de sites Web sur mesure en React/Next.js, avec des solutions adaptées. Je transforme vos idées en expériences digitales performantes et engageantes.",
     "subtitle": "Je transforme vos idées en expériences numériques captivantes, performantes et intuitives, conçues pour engager votre audience et faire grandir votre activité. Mon approche allie créativité et expertise technique afin de garantir un site web à la fois esthétique et parfaitement fonctionnel. L'objectif : offrir une expérience utilisateur optimale, renforcer votre présence en ligne et vous aider à atteindre vos ambitions stratégiques. Créons ensemble quelque chose d'exceptionnel !",
     "link": "Mes projets",
     "link2": "Une idée ?",
-    
-    "title_1": "Application Web",
-    "subtitle_1_pt_1": "J'offre des solutions de développement Webflow sur mesure pour les startups et les agences créatives/digitales de divers secteurs, offrant un moyen fluide et efficace de donner vie à votre vision. Avec Webflow, je peux créer un site web hautement personnalisé qui reflète les besoins et les objectifs uniques de votre entreprise.",
-    "subtitle_1_pt_2": "Avec un accent sur l'expérience utilisateur, le design réactif et la performance optimale, votre site Webflow sera conçu pour favoriser la croissance et le succès de votre entreprise. Alors pourquoi se contenter d'un modèle générique quand vous pouvez avoir un site Webflow sur mesure et créatif qui vous distingue vraiment de la concurrence ?",
-    "link_1_1": "Application Web",
-    
+    "title_1": "Site vitrine",
+    "subtitle_1_pt_1": "Je conçois des sites vitrines sur mesure pour les startups et les agences créatives/digitales, en alliant esthétisme, fluidité et performance. Chaque projet est pensé pour refléter fidèlement votre identité et vos objectifs.",
+    "subtitle_1_pt_2": "Grâce à une expérience utilisateur optimisée, un design réactif et des performances accrues, votre site vitrine deviendra un véritable atout pour votre croissance. Offrez-vous une présence en ligne unique et percutante, loin des modèles génériques.",
+    "link_1_1": "Site vitrine",
     "title_2": "Application Web",
-    "subtitle_2_pt_1": "J'offre des solutions de développement Webflow sur mesure pour les startups et les agences créatives/digitales de divers secteurs, offrant un moyen fluide et efficace de donner vie à votre vision. Avec Webflow, je peux créer un site web hautement personnalisé qui reflète les besoins et les objectifs uniques de votre entreprise.",
-    "subtitle_2_pt_2": "Avec un accent sur l'expérience utilisateur, le design réactif et la performance optimale, votre site Webflow sera conçu pour favoriser la croissance et le succès de votre entreprise. Alors pourquoi se contenter d'un modèle générique quand vous pouvez avoir un site Webflow sur mesure et créatif qui vous distingue vraiment de la concurrence ?",
+    "subtitle_2_pt_1": "Je développe des applications web sur mesure adaptées aux besoins spécifiques des startups et des agences créatives/digitales. Mon approche garantit une solution fluide, intuitive et performante, parfaitement alignée avec vos objectifs.",
+    "subtitle_2_pt_2": "Avec une ergonomie soignée, un design réactif et une optimisation technique avancée, votre application web sera un moteur de croissance pour votre activité. Démarquez-vous avec une solution unique et innovante, conçue pour évoluer avec vous.",
     "link_2_2": "Application Web"
   },
   "idea": {
@@ -277,16 +275,23 @@
     "website": "Adresse de votre site",
     "projectDetails": "Parlez-moi de votre projet",
     "button_values": {
-      "project_type": ["Site Vitrine", "Application Web", "Autre"],
-      "delay": ["<1 mois", "1-3 mois", "3-6 mois", "+6 mois"]
+      "project_type": [
+        "Site Vitrine",
+        "Application Web",
+        "Autre"
+      ],
+      "delay": [
+        "<1 mois",
+        "1-3 mois",
+        "3-6 mois",
+        "+6 mois"
+      ]
     }
   },
   "project_page": {
-    "title":"Mes projets — Une sélection de mes réalisations les plus abouties. Chaque projet témoigne de mon apprentissage, de ma progression et de mes compétences. Ils illustrent mon engagement à créer et à innover avec passion.",
-    "subtitle":"Je transforme vos idées en expériences numériques captivantes, performantes et intuitives, conçues pour engager votre audience et faire grandir votre activité. Mon approche allie créativité et expertise technique afin de garantir un site web à la fois esthétique et parfaitement fonctionnel. L&apos;objectif : offrir une expérience utilisateur optimale, renforcer votre présence en ligne et vous aider à atteindre vos ambitions stratégiques. Créons ensemble quelque chose d&apos;exceptionnel !",
+    "title": "Mes projets — Une sélection de mes réalisations les plus abouties. Chaque projet témoigne de mon apprentissage, de ma progression et de mes compétences. Ils illustrent mon engagement à créer et à innover avec passion.",
+    "subtitle": "Je transforme vos idées en expériences numériques captivantes, performantes et intuitives, conçues pour engager votre audience et faire grandir votre activité. Mon approche allie créativité et expertise technique afin de garantir un site web à la fois esthétique et parfaitement fonctionnel. L&apos;objectif : offrir une expérience utilisateur optimale, renforcer votre présence en ligne et vous aider à atteindre vos ambitions stratégiques. Créons ensemble quelque chose d&apos;exceptionnel !",
     "link": "Mes projets",
     "link2": "Une idée ?"
   }
-
-  
 }

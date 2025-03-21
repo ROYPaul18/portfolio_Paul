@@ -122,11 +122,11 @@ const ProjectPage = () => {
               </div>
 
               {/* Images */}
-              <div className="space-y-8">
+              <div className="space-y-12">
                 {project.images.map((imgSrc, index) => (
                   <div
                     key={index}
-                    className="w-full h-96 relative overflow-hidden"
+                    className="w-full h-[600px] relative overflow-hidden"
                   >
                     <Image
                       src={imgSrc}
@@ -173,12 +173,12 @@ const ProjectPage = () => {
                 </div>
                 <div>
                   {project.link && (
-                    <h2 className="text-lg 2xl:text-3xl font-normal text-blanc mb-4">
+                    <h2 className="text-base 2xl:text-2xl font-normal text-blanc mb-4">
                       <a
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-400 underline"
+                        className="text-blanc underline"
                       >
                         {project.link}
                       </a>

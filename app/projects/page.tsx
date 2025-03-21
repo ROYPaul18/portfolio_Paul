@@ -17,8 +17,8 @@ const Page = () => {
         </h1>
         <div className="flex flex-col md:flex-row mb-12 md:mb-24">
           <div className="w-full md:w-1/2 mb-8 md:mb-0"></div>
-          <div className="w-full md:w-1/2 my-24">
-            <p className="text-gris/60 text-sm md:text-base 2xl:text-3xl leading">
+          <div className="w-full md:w-1/2 my-24 ">
+            <p className="text-gris/60 text-sm md:text-base 2xl:text-3xl leading-relaxed ">
               {t("project_page.subtitle")}
             </p>
 

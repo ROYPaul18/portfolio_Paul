@@ -11,9 +11,10 @@ export default {
     extend: {
       colors: {
         // Couleurs de base
-        deepblue: "#000",
+        deepblue: "#0F0F0F",
         lightblue: "#ECEEFF",
         greytext: "#9A9A9A",
+        grismobile:"#232323",
         blanc: "#F7F3E9",
         grisbleu: "#141414",
         gris: "#A4A4A4",

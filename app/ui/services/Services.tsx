@@ -11,7 +11,7 @@ const Services = () => {
 
   return (
     <section className="text-white mt-8 md:mt-20">
-      <div className="mt-12 md:mt-20 pb-8 md:pb-12 px-4 md:px-8 pt-6 md:pt-16 2xl:px-12 2xl:pt-24">
+      <div className="mt-12 md:mt-20 pb-8 md:pb-12 px-4 2xl:px-8 pt-6 md:pt-16 2xl:pt-24">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -31,7 +31,7 @@ const Services = () => {
               <div className="flex flex-col sm:flex-row justify-start mt-6 md:mt-10 space-y-4 sm:space-y-0 sm:space-x-6 md:space-x-12 text-base md:text-lg 2xl:text-3xl">
                 <Link
                   href="/projects"
-                  className="group relative inline-flex items-center gap-2 mt-4 md:mt-6 text-lg md:text-base py-1 transition-colors"
+                  className="group relative inline-flex items-center gap-2 mt-4 md:mt-6  py-1 transition-colors"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -49,14 +49,14 @@ const Services = () => {
                       fill="currentColor"
                     ></path>
                   </svg>
-                  <span className="relative z-10 group-hover:text-black 2xl:text-2xl">
+                  <span className="relative z-10 group-hover:text-black">
                     {t("service_page.link")}
                   </span>
                   <span className="absolute left-0 bottom-0 w-0 h-full bg-white transition-all duration-700 ease-in-out group-hover:w-full"></span>
                 </Link>
                 <Link
                   href="/idea"
-                  className="group relative inline-flex items-center gap-2 mt-4 md:mt-6 text-lg md:text-base py-1 transition-colors"
+                  className="group relative inline-flex items-center gap-2 mt-4 md:mt-6 transition-colors"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@ const Services = () => {
                       fill="currentColor"
                     ></path>
                   </svg>
-                  <span className="relative z-10 group-hover:text-black 2xl:text-2xl">
+                  <span className="relative z-10 group-hover:text-black">
                     {t("service_page.link2")}
                   </span>
                   <span className="absolute left-0 bottom-0 w-0 h-full bg-white transition-all duration-700 ease-in-out group-hover:w-full"></span>
@@ -109,13 +109,13 @@ const Services = () => {
             </motion.div>
             <div className="pl-0 md:pl-12 w-full md:w-1/2 flex flex-col justify-between mt-6 md:mt-0">
               <h2 className="text-2xl md:text-4xl 2xl:text-7xl font-light mb-4 md:mb-12">
-                {t("service_page.title_1")}
+                {t("service_page.title_2")}
               </h2>
               <p className="text-gris/60 mb-4 md:mb-8 text-sm md:text-sm 2xl:text-2xl">
-                {t("service_page.subtitle_1_pt_1")}
+                {t("service_page.subtitle_2_pt_1")}
               </p>
               <p className="text-gris/60 mb-4 md:mb-8 text-sm md:text-sm 2xl:text-2xl">
-                {t("service_page.subtitle_1_pt_2")}
+                {t("service_page.subtitle_2_pt_2")}
               </p>
               <Link
                 href="/services/application-web"
@@ -138,7 +138,7 @@ const Services = () => {
                   ></path>
                 </svg>
                 <span className="relative z-10 group-hover:text-black">
-                  {t("service_page.link_1_1")}
+                  {t("service_page.link_2_2")}
                 </span>
                 <span className="absolute left-0 bottom-0 w-0 h-full bg-white transition-all duration-700 ease-in-out group-hover:w-full"></span>
               </Link>

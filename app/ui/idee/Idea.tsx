@@ -74,14 +74,16 @@ const Idea = () => {
   };
 
   return (
-    <section className="text-white mt-20 px-4 2xl:px-8">
-      <div className="grid grid-cols-2">
-        <div className="flex flex-col justify-between fixed top-12 2xl:top-24 mt-12 w-1/2">
-          <h1 className="text-5xl font-medium">{t("idea.contact")}</h1>
-          <div className="mt-12 text-lg">
+    <section className="text-white mt-20 px-4 2xl:px-8 sm:flex-col flex">
+      <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="flex flex-col justify-between lg:fixed top-12 2xl:top-24 mt-12 w-1/2">
+          <h1 className="text-2xl md:text-3xl lg:text-5xl 2xl:text-8xl font-medium">
+            {t("idea.contact")}
+          </h1>
+          <div className="mt-12 text-base md:text-lg 2xl:text-3xl flex flex-col">
             <Link
-              href="/idea"
-              className="group relative text-sm md:text-base 2xl:text-2xl flex items-center transition-colors"
+              href="mailto:roypaul.18.pr@gmail.com"
+              className="group relative text-sm md:text-base 2xl:text-2xl inline-flex items-center transition-colors"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -104,12 +106,9 @@ const Idea = () => {
               <span className="relative z-10 group-hover:text-black">
                 roypaul.18.pr@gmail.com
               </span>
-              <span className="absolute left-0 bottom-0 w-0 h-full bg-white transition-all duration-700 ease-in-out group-hover:w-full"></span>
+              <span className="block absolute left-0 bottom-0 w-0 h-full bg-white transition-all duration-700 ease-in-out group-hover:w-full"></span>
             </Link>
-            <Link
-              href="/idea"
-              className="group relative text-sm md:text-base 2xl:text-2xl flex items-center transition-colors"
-            >
+            <p className="group relative text-sm md:text-base 2xl:text-2xl inline-flex items-center transition-colors">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="size-5 md:size-6 mr-2 group-hover:text-black relative z-10"
@@ -131,16 +130,19 @@ const Idea = () => {
               <span className="relative z-10 group-hover:text-black">
                 07 82 68 10 39
               </span>
-              <span className="absolute left-0 bottom-0 w-0 h-full bg-white transition-all duration-700 ease-in-out group-hover:w-full"></span>
-            </Link>
+              <span className="block absolute left-0 bottom-0 w-0 h-full bg-white transition-all duration-700 ease-in-out group-hover:w-full"></span>
+            </p>
           </div>
         </div>
 
-        <div className="mt-16 col-start-2">
+        <div className="py-44 col-start-2">
           <h2 className="text-xl 2xl:text-4xl font-medium border-b border-blanc pb-4 mb-2 2xl:mb-12">
             {t("idea.details")}
           </h2>
 
+        <p>
+          <a href="text-blanc">aa</a>
+        </p>
           <form onSubmit={handleSubmit}>
             <p className="text-gris/60 mt-6 text-base 2xl:text-2xl">
               {" "}
@@ -222,25 +224,33 @@ const Idea = () => {
             <h2 className="text-xl 2xl:text-4xl font-medium border-b border-blanc pb-4 mt-24 mb-2 2xl:mb-12">
               {t("idea.your_info")}
             </h2>
-            <div className="mt-4 space-y-2 2xl:space-y-12 border-b">
+            <div className="mt-4 space-y-2 2xl:space-y-12">
               {[
                 { label: t("idea.name_entreprise"), key: "name" },
                 { label: t("idea.your_email"), key: "email" },
+                { label: t("idea.your_number"), key: "numbers" },
                 { label: t("idea.company"), key: "company" },
                 { label: t("idea.name_site"), key: "website" },
-                { label: t("idea.project"), key: "projectDetails" },
               ].map(({ label, key }) => (
                 <input
                   key={key}
                   type="text"
                   placeholder={label}
-                  className="w-full bg-deepblue text-white py-3 px-4 focus:outline-none text-sm 2xl:text-2xl border-b border-gris/60"
+                  className="w-full bg-deepblue text-blanc py-3 px-4 placeholder-gris/60 focus:outline-none text-sm 2xl:text-2xl border-b border-gris/60"
                   value={formData[key as keyof typeof formData]}
                   onChange={(e) =>
                     setFormData({ ...formData, [key]: e.target.value })
                   }
                 />
               ))}
+              <textarea
+                placeholder={t("idea.project")}
+                className="w-full bg-deepblue text-blanc py-2 px-4 placeholder-gris/60 focus:outline-none text-sm 2xl:text-2xl border-b border-gris/60 h-24 resize-none"
+                value={formData.projectDetails}
+                onChange={(e) =>
+                  setFormData({ ...formData, projectDetails: e.target.value })
+                }
+              />
             </div>
 
             <button
