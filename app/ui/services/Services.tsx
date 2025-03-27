@@ -28,15 +28,17 @@ const Services = () => {
                 {t("service_page.subtitle")}
               </p>
 
-              <div className="flex flex-col sm:flex-row justify-start mt-6 md:mt-10 space-y-4 sm:space-y-0 sm:space-x-6 md:space-x-12 text-base md:text-lg 2xl:text-3xl">
+              <div className="flex flex-col md:flex-row justify-start mt-12 md:mt-24 space-y-4 md:space-y-0 md:space-x-12 text-base 2xl:text-3xl">
                 <Link
                   href="/projects"
-                  className="group relative inline-flex items-center gap-2 mt-4 md:mt-6  py-1 transition-colors"
+                  className="group relative text-sm md:text-base 2xl:text-2xl flex items-center transition-colors"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="size-5 md:size-6 mr-2 group-hover:text-deepblue relative z-10"
+                    className="size-6 2xl:size-8 md:size-6 mr-2 group-hover:text-black relative z-10"
                     viewBox="0 0 13 12"
+                    fill="none"
+                    preserveAspectRatio="xMidYMid meet"
                     aria-hidden="true"
                     role="img"
                   >
@@ -50,18 +52,20 @@ const Services = () => {
                     ></path>
                   </svg>
                   <span className="relative z-10 group-hover:text-black">
-                    {t("service_page.link")}
+                    {t("about.link_1")}
                   </span>
                   <span className="absolute left-0 bottom-0 w-0 h-full bg-white transition-all duration-700 ease-in-out group-hover:w-full"></span>
                 </Link>
                 <Link
                   href="/idea"
-                  className="group relative inline-flex items-center gap-2 mt-4 md:mt-6 transition-colors"
+                  className="group relative text-sm md:text-base 2xl:text-2xl flex items-center transition-colors"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="size-5 md:size-6 mr-2 group-hover:text-deepblue relative z-10"
+                    className="size-6 2xl:size-8 md:size-6 mr-2 group-hover:text-black relative z-10"
                     viewBox="0 0 13 12"
+                    fill="none"
+                    preserveAspectRatio="xMidYMid meet"
                     aria-hidden="true"
                     role="img"
                   >
@@ -75,7 +79,7 @@ const Services = () => {
                     ></path>
                   </svg>
                   <span className="relative z-10 group-hover:text-black">
-                    {t("service_page.link2")}
+                    {t("about.link_2")}
                   </span>
                   <span className="absolute left-0 bottom-0 w-0 h-full bg-white transition-all duration-700 ease-in-out group-hover:w-full"></span>
                 </Link>

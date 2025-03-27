@@ -141,7 +141,7 @@ const Idea = () => {
           </h2>
 
         <p>
-          <a href="text-blanc">aa</a>
+          
         </p>
           <form onSubmit={handleSubmit}>
             <p className="text-gris/60 mt-6 text-base 2xl:text-2xl">
@@ -230,7 +230,7 @@ const Idea = () => {
                 { label: t("idea.your_email"), key: "email" },
                 { label: t("idea.your_number"), key: "numbers" },
                 { label: t("idea.company"), key: "company" },
-                { label: t("idea.name_site"), key: "website" },
+                { label: t("idea.website"), key: "website" },
               ].map(({ label, key }) => (
                 <input
                   key={key}
@@ -244,7 +244,7 @@ const Idea = () => {
                 />
               ))}
               <textarea
-                placeholder={t("idea.project")}
+                placeholder={t("idea.projectDetails")}
                 className="w-full bg-deepblue text-blanc py-2 px-4 placeholder-gris/60 focus:outline-none text-sm 2xl:text-2xl border-b border-gris/60 h-24 resize-none"
                 value={formData.projectDetails}
                 onChange={(e) =>

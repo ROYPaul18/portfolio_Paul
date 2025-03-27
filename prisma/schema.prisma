@@ -8,15 +8,16 @@ datasource db {
 }
 
 model Request {
-  id          String  @id @default(uuid())
-  category    String
-  budget      String
-  pages       String
-  delay       String
-  name        String
-  email       String
-  company     String?
-  website     String?
+  id                 String   @id @default(uuid())
+  category           String
+  budget             String
+  pages              String
+  delay              String
+  name               String
+  email              String
+  number             String
+  company            String?
+  website            String?
   projectDescription String
-  createdAt   DateTime @default(now())
+  createdAt          DateTime @default(now())
 }

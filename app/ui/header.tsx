@@ -131,13 +131,7 @@ const Header: React.FC = () => {
             <div className="flex flex-col">
               <span className="text-gris/60">{t("header.greeting")}</span>
               <span className="text-white">Paul Roy</span>
-            </div>
-            <button
-              onClick={() => setMobileMenuOpen(false)}
-              className="text-white hover:text-gris/60 transition-colors"
-            >
-              <X size={24} />
-            </button>
+            </div>          
           </div>
 
           {/* Navigation Links */}

@@ -86,7 +86,7 @@ const ProjectPage = () => {
 
       {/* Header Section */}
       <section className="container mx-auto px-8 py-8 mt-24 mb-4">
-        <h1 className="text-5xl font-bold">{project.name}</h1>
+        <h1 className="text-4xl font-bold">{project.name}</h1>
         <p className="text-gris/60 text-lg">
           Produit: <span className="text-white"> {project.type} </span>
         </p>

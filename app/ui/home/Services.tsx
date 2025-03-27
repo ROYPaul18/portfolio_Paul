@@ -32,11 +32,7 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
   if (!ready) return null;
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true }}
+    <div
       className={`relative py-8 md:py-20 2xl:py-40 border-b border-gris/60 transition-opacity duration-300${
         hoveredService && hoveredService !== index
           ? "opacity-30"
@@ -46,36 +42,28 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
       onMouseLeave={() => setHoveredService(null)}
     >
       <div className="">
-        <motion.span
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          viewport={{ once: true }}
+        <span
           className="text-xs md:text-sm 2xl:text-xl text-gris/60 mr-8"
         >
           [{t(number)}]
-        </motion.span>
+        </span>
       </div>
 
       <div className="pl-8 md:pl-40">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-0">
           <div className="hidden md:block md:col-span-1" />
           <div className="col-span-1 md:col-span-5 flex flex-col justify-between px-4 h-full">
-            <motion.h2
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
+            <h2
               className="text-2xl md:text-3xl 2xl:text-7xl font-medium text-white leading-tight"
             >
               {t(type)}
-            </motion.h2>
+            </h2>
 
             <div className="flex flex-col gap-10 md:gap-20">
               <p className="text-xs md:text-sm 2xl:text-3xl text-gris/60 leading-relaxed ">
                 {t(subtitle)}
               </p>
-              <motion.div>
+              <div>
                 <Link
                   href={link}
                   className="group relative inline-flex items-center gap-2 mt-4 md:mt-6 text-lg md:text-base 2xl:text-3xl transition-colors text-blanc"
@@ -101,11 +89,11 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
                   </span>
                   <span className="absolute left-0 bottom-0 w-0 h-full bg-white transition-all duration-700 ease-in-out group-hover:w-full"></span>
                 </Link>
-              </motion.div>
+              </div>
             </div>
           </div>
 
-          <motion.div className="col-span-1 md:col-span-6 md:col-start-7 mt-8 md:mt-0">
+          <div className="col-span-1 md:col-span-6 md:col-start-7 mt-8 md:mt-0">
             <div className="aspect-[4/3] w-full md:w-3/4 mx-auto md:ml-auto">
               <Image
                 src={imageSrc}
@@ -115,10 +103,10 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
                 className="w-full h-full object-cover"
               />
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

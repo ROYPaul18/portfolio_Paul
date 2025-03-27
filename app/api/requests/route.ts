@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
     // Champs obligatoires
     const requiredFields = [
       "name", "email", "company", "website", 
-      "projectDetails", "category", "budget", "pages", "delay"
+      "projectDetails", "category", "budget", "pages", "delay", "number"
     ];
 
     const missingFields = requiredFields.filter(
@@ -54,6 +54,7 @@ export async function POST(req: NextRequest) {
         company: data.company.trim(),
         website: data.website.trim(),
         projectDescription: data.projectDetails.trim(),
+        number: data.number.trim(),
         category: data.category.trim(),
         budget: data.budget.trim(),
         pages: data.pages.trim(),

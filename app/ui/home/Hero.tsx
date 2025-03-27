@@ -24,18 +24,18 @@ const Hero: React.FC<HeroProps> = ({ className = "" }) => {
     <section className={`relative w-full h-screen flex flex-col items-center justify-center text-white text-center px-4 ${className}`}>
       {/* Grand titre */}
       <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl 2xl:text-9xl font-bold uppercase leading-tight">
-        DEVELOPPEUR 
+        {t("hero.job1")}
       </h1>
       <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl 2xl:text-9xl font-bold uppercase leading-tight">
-        WEB 
+      {t("hero.job2")}
       </h1>
       <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl 2xl:text-9xl font-bold uppercase leading-tight">
-        FREELANCE 
+      {t("hero.job3")}
       </h1>
       
       {/* Petit sous-texte */}
       <p className="mt-4 text-lg sm:text-xl md:text-xl 2xl:text-3xl max-w-2xl">
-        Création de sites web performants, modernes et optimisés pour votre business.
+      {t("hero.sub")}
       </p>
     </section>
   );

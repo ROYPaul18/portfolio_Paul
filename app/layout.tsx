@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body
         className={`${figtree.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-deepblue flex justify-center scroll-smooth` }
       >

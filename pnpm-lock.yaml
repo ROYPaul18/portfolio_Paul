@@ -17,6 +17,9 @@ dependencies:
   i18next:
     specifier: ^24.2.1
     version: 24.2.1(typescript@5.7.3)
+  i18next-browser-languagedetector:
+    specifier: ^8.0.4
+    version: 8.0.4
   i18next-http-backend:
     specifier: ^3.0.1
     version: 3.0.1
@@ -2153,6 +2156,12 @@ packages:
     resolution: {integrity: sha512-KknJ50kTInJ7qIScF3jeaFRpMpE8/lfiTdzf/twXyPBLAGrLRTmkz3AdTnKeh40X8k9L2fdYwEp/42WGXIRGcg==}
     dependencies:
       void-elements: 3.1.0
+    dev: false
+
+  /i18next-browser-languagedetector@8.0.4:
+    resolution: {integrity: sha512-f3frU3pIxD50/Tz20zx9TD9HobKYg47fmAETb117GKGPrhwcSSPJDoCposXlVycVebQ9GQohC3Efbpq7/nnJ5w==}
+    dependencies:
+      '@babel/runtime': 7.26.0
     dev: false
 
   /i18next-fs-backend@2.6.0:

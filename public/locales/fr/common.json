@@ -28,7 +28,7 @@
     "idea": "Une idée en tête ?",
     "services": "Mes services",
     "siteVitrine": "Site vitrine",
-    "applicationWeb": "Application web",
+    "applicationWeb": "Application Web",
     "otherLinks": "Autres liens",
     "allRightsReserved": "Tous droits réservés",
     "legalMentions": "Mentions légales",
@@ -39,7 +39,11 @@
     "location": "basé à Bourges/FR",
     "idea": "Une idée en tête ? Parlons-en",
     "email": "roypaul.18.pr@gmail.com",
-    "discover": "Me découvrir"
+    "discover": "Me découvrir",
+    "job1": "DEVELOPPEUR",
+    "job2": "WEB",
+    "job3": "FREELANCE",
+    "sub":"Création de sites web performants, modernes et optimisés pour votre business."
   },
   "prejob": {
     "title": {
@@ -57,7 +61,7 @@
   "project_home_1": {
     "name": "Beady Ink",
     "type": "Application Web/Site Vitrine",
-    "description_pt1": "Développement d'un site vitrine interactif et d'une application web sur-mesure pour présenter les créations artistiques du client (tatouages et ongles).",
+    "description_pt1": "Développement d'un site vitrine interactif et d'une Application Web sur-mesure pour présenter les créations artistiques du client (tatouages et ongles).",
     "description_pt2": "Les utilisateurs peuvent parcourir une galerie dynamique, créer un compte, prendre rendez-vous en ligne et laisser des avis.",
     "description_pt3": "Un tableau de bord intuitif a été conçu pour permettre au client de gérer son activité : ajout de photos et services, gestion des plannings et rendez-vous, suivi des avis clients. Le site est entièrement responsive et conçu pour une utilisation facile, même sans compétences techniques."
   },
@@ -82,8 +86,8 @@
     "info_4": "Fonctionnalités de base (Google Maps, formulaire)"
   },
   "service_2": {
-    "type": "Application",
-    "subtitle": "Je développe des applications web modernes, performantes et optimisées, alliant réactivité, rapidité et stabilité. Mon objectif est de garantir une expérience utilisateur fluide grâce à des solutions dynamiques et évolutives.",
+    "type": "Application Web",
+    "subtitle": "Je développe des Applications Web modernes, performantes et optimisées, alliant réactivité, rapidité et stabilité. Mon objectif est de garantir une expérience utilisateur fluide grâce à des solutions dynamiques et évolutives.",
     "info_1": "Design sur mesure",
     "info_2": "Visuel adaptatif (tablette, ordinateur et smartphone)",
     "info_3": "SEO optimisé !",
@@ -104,17 +108,17 @@
   "site_vitrine": {
     "number": "01",
     "type": "Site vitrine",
-    "subtitle": "Je développe des applications web modernes, performantes et optimisées, alliant réactivité, rapidité et stabilité. Mon objectif est de garantir une expérience utilisateur fluide grâce à des solutions dynamiques et évolutives."
+    "subtitle": "Je développe des Applications Web modernes, performantes et optimisées, alliant réactivité, rapidité et stabilité. Mon objectif est de garantir une expérience utilisateur fluide grâce à des solutions dynamiques et évolutives."
   },
   "application_web": {
     "number": "02",
-    "type": "Application web",
-    "subtitle": "Je développe des applications web modernes, performantes et optimisées, alliant réactivité, rapidité et stabilité. Mon objectif est de garantir une expérience utilisateur fluide grâce à des solutions dynamiques et évolutives."
+    "type": "Application Web",
+    "subtitle": "Je développe des Applications Web modernes, performantes et optimisées, alliant réactivité, rapidité et stabilité. Mon objectif est de garantir une expérience utilisateur fluide grâce à des solutions dynamiques et évolutives."
   },
   "best_project": {
     "title_1": "Découvrez mes projets qui",
-    "title_2": "impressionnent à la fois les clients et",
-    "title_3": "les clients.",
+    "title_2": "impressionnent à la fois les entreprises et",
+    "title_3": "leurs clients.",
     "description": "Mes projets mettent en valeur le travail que j'ai réalisé. Jetez un œil à mon portfolio, mettant en avant la diversité de mes projets de conception web et de développement d'applications.",
     "project_1_type": "Application Web/Site vitrine",
     "project_1_name": "Beaudy Ink",
@@ -135,7 +139,7 @@
       "Gestion des horaires d'ouverture"
     ],
     "project_1_description": "Découvrez Beaudy Ink, un salon de tatouage et de manucure professionnel à Soye-en-Septaine et Flavigny, offrant des designs uniques et artistiques.",
-    "project_2_type": "Application web",
+    "project_2_type": "Application Web",
     "project_2_name": "Dashboard Devoteam",
     "project_2_slug": "dashboard-devoteam",
     "project_2_description": "Dans le cadre de mon stage, aux côtés d'un doctorant, j'ai pu créer un tableau de bord interactif visant à réduire le taux d'attrition au sein de Devoteam.",
@@ -190,14 +194,14 @@
   },
   "service": {
     "site_vitrine": "Site vitrine",
-    "application_web": "Application web",
+    "application_web": "Application Web",
     "ready_to_help_app": "Boostez votre présence en ligne avec des applications performantes et sur mesure.Spécialisé en Next.js et Node.js, je développe des applications web rapides, optimisées pour le SEO et conçues pour offrir une expérience utilisateur fluide et engageante. Mon objectif ? Créer des solutions digitales qui captivent, convertissent et vous démarquent de la concurrence. Découvrez mes services et voyons ensemble comment propulser votre projet au niveau supérieur.",
     "ready_to_help_site": "Donnez à votre entreprise une vitrine en ligne moderne et impactante. Spécialisé en Next.js et Node.js, je conçois des sites vitrines rapides, sécurisés et optimisés pour le SEO. Mon objectif ? Vous offrir une présence en ligne professionnelle qui capte l’attention, engage vos visiteurs et renforce votre crédibilité. Découvrez mes services et créons ensemble un site à la hauteur de votre image."
   },
   "project": {
     "title": {
       "site-vitrine": "Projet de site vitrine réalisé",
-      "application-web": "Projet d'application web réalisé"
+      "application-web": "Projet d'Application Web réalisé"
     }
   },
   "application_web_service": {
@@ -251,7 +255,7 @@
     "link_2_2": "Application Web"
   },
   "idea": {
-    "contact": "Contacter moi",
+    "contact": "Contactez-moi",
     "e-mail": "roypaul.18.pr@gmail.com",
     "num": "07 82 68 10 39",
     "details": "Détails du projet",
@@ -270,6 +274,7 @@
     "success": "Demande envoyée avec succès !",
     "error": "Erreur d'envoi",
     "name": "Votre nom",
+    "your_number":"Votre numéro",
     "email": "Votre e-mail",
     "company": "Nom de votre entreprise",
     "website": "Adresse de votre site",

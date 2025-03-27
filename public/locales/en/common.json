@@ -39,7 +39,11 @@
     "location": "based in Bourges/FR",
     "idea": "any idea? Let's talk about it",
     "email": "roypaul.18.pr@gmail.com",
-    "discover": "Discover myself"
+    "discover": "Discover myself",
+    "job1":"FREELANCE",
+    "job2":"WEB",
+    "job3":"DEVELOPPER",
+    "sub":"Creation of high-performance, modern and optimized websites for your business."
   },
   "prejob": {
     "title": {
@@ -249,6 +253,7 @@
     "project": "Your website address",
     "your_name": "Tell me about your project",
     "submit": "Submit",
+    "your_number":"Your number",
     "sending": "Sending...",
     "success": "Request sent successfully!",
     "error": "Sending error",
@@ -265,7 +270,7 @@
       ],
       "delay": [
         "<1 month",
-        "1-3 monreths",
+        "1-3 months",
         "3-6 months",
         "+6 months"
       ]
