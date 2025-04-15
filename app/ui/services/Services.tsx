@@ -1,34 +1,114 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { useTranslation } from "next-i18next";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
   const { t } = useTranslation("common");
+  
+  // Refs for animation elements
+  const titleRef = useRef(null);
+  const subtitleRef = useRef(null);
+  const linksRef = useRef(null);
+  const serviceRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    // Title and subtitle animation
+    gsap.fromTo(
+      titleRef.current,
+      { opacity: 0, y: 50 },
+      { 
+        opacity: 1, 
+        y: 0, 
+        duration: 1, 
+        ease: "power3.out" 
+      }
+    );
+
+    gsap.fromTo(
+      subtitleRef.current,
+      { opacity: 0, y: 50 },
+      { 
+        opacity: 1, 
+        y: 0, 
+        duration: 1, 
+        delay: 0.3, 
+        ease: "power3.out" 
+      }
+    );
+
+    // Links animation
+    gsap.fromTo(
+      linksRef.current,
+      { opacity: 0, y: 50 },
+      { 
+        opacity: 1, 
+        y: 0, 
+        duration: 1, 
+        delay: 0.5, 
+        ease: "power3.out" 
+      }
+    );
+
+    // Services sections scroll animations
+    serviceRefs.current.forEach((serviceRef) => {
+      if (serviceRef) {
+        // Animation for service text sections
+        const textElements = serviceRef.querySelectorAll('h2, p, a');
+        gsap.fromTo(
+          textElements,
+          { 
+            opacity: 0, 
+            y: 100
+          },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: serviceRef,
+              start: "top 80%",
+              toggleActions: "play none none reverse"
+            }
+          }
+        );
+      }
+    });
+  }, []);
 
   return (
     <section className="text-white mt-8 md:mt-20">
       <div className="mt-12 md:mt-20 pb-8 md:pb-12 px-4 2xl:px-8 pt-6 md:pt-16 2xl:pt-24">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex-col"
-        >
-          <h1 className="text-2xl md:text-3xl lg:text-5xl 2xl:text-8xl font-medium mb-8 md:mb-16">
+        <div>
+          <h1 
+            ref={titleRef} 
+            className="text-2xl md:text-3xl lg:text-5xl 2xl:text-8xl font-medium mb-8 md:mb-16"
+          >
             {t("service_page.title")}
           </h1>
           <div className="flex flex-col md:flex-row mb-12 md:mb-24">
             <div className="w-full md:w-1/2 mb-4 md:mb-0"></div>
             <div className="w-full md:w-1/2 my-8 md:my-24">
-              <p className="text-gris/60 text-sm md:text-base 2xl:text-3xl leading-relaxed">
+              <p 
+                ref={subtitleRef}
+                className="text-gris/60 text-sm md:text-base 2xl:text-3xl leading-relaxed"
+              >
                 {t("service_page.subtitle")}
               </p>
 
-              <div className="flex flex-col md:flex-row justify-start mt-12 md:mt-24 space-y-4 md:space-y-0 md:space-x-12 text-base 2xl:text-3xl">
+              <div 
+                ref={linksRef}
+                className="flex flex-col md:flex-row justify-start mt-12 md:mt-24 space-y-4 md:space-y-0 md:space-x-12 text-base 2xl:text-3xl"
+              >
                 <Link
                   href="/projects"
                   className="group relative text-sm md:text-base 2xl:text-2xl flex items-center transition-colors"
@@ -86,22 +166,19 @@ const Services = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
 
         <div className="space-y-16 md:space-y-24 2xl:space-y-32">
           {/* Premier service - Application Web */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
+          <div 
+           ref={(el) => {
+            if (el) serviceRefs.current[0] = el;
+          }}
             className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-0"
           >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6 }}
-              className="relative w-full md:w-1/2 aspect-video"
+            <div 
+              className="relative w-full md:w-1/2 aspect-video 
+              "
             >
               <Image
                 src="/img/vitrine.png"
@@ -110,16 +187,16 @@ const Services = () => {
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover w-full h-full"
               />
-            </motion.div>
+            </div>
             <div className="pl-0 md:pl-12 w-full md:w-1/2 flex flex-col justify-between mt-6 md:mt-0">
               <h2 className="text-2xl md:text-4xl 2xl:text-7xl font-light mb-4 md:mb-12">
-                {t("service_page.title_2")}
+                {t("service_page.title_1")}
               </h2>
               <p className="text-gris/60 mb-4 md:mb-8 text-sm md:text-sm 2xl:text-2xl">
-                {t("service_page.subtitle_2_pt_1")}
+                {t("service_page.subtitle_1_pt_1")}
               </p>
               <p className="text-gris/60 mb-4 md:mb-8 text-sm md:text-sm 2xl:text-2xl">
-                {t("service_page.subtitle_2_pt_2")}
+                {t("service_page.subtitle_1_pt_2")}
               </p>
               <Link
                 href="/services/application-web"
@@ -142,19 +219,18 @@ const Services = () => {
                   ></path>
                 </svg>
                 <span className="relative z-10 group-hover:text-black">
-                  {t("service_page.link_2_2")}
+                  {t("service_page.link_1_1")}
                 </span>
                 <span className="absolute left-0 bottom-0 w-0 h-full bg-white transition-all duration-700 ease-in-out group-hover:w-full"></span>
               </Link>
             </div>
-          </motion.div>
+          </div>
 
           {/* Deuxième service - Site Vitrine */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
+          <div 
+         ref={(el) => {
+            if (el) serviceRefs.current[1] = el;
+          }}
             className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-0 h-full"
           >
             <div className="w-full md:w-1/2 pr-0 md:pr-4 flex flex-col justify-between order-2 md:order-1 mt-6 md:mt-0">
@@ -193,21 +269,18 @@ const Services = () => {
                 <span className="absolute left-0 bottom-0 w-0 h-full bg-white transition-all duration-700 ease-in-out group-hover:w-full"></span>
               </Link>
             </div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6 }}
+            <div 
               className="relative w-full md:w-1/2 aspect-video order-1 md:order-2"
             >
               <Image
-                src="/img/vitrine.png"
+                src="/img/app.png"
                 alt="Application Web"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover w-full h-full"
               />
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

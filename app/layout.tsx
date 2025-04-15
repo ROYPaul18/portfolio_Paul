@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   title: "Paul Roy",
   description: "Mon portfolio",
 };
-
+  
 export default function RootLayout({
   children,
 }: Readonly<{

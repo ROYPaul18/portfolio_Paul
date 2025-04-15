@@ -1,16 +1,20 @@
-"use client";
-
-import React, { useState, useEffect } from "react";
+'use client'
+import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
+import { gsap } from "gsap";
 
 const Header: React.FC = () => {
   const { t, i18n } = useTranslation("common", { useSuspense: false });
   const pathname = usePathname();
+  const [isLoaded, setIsLoaded] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [lang, setLang] = useState(i18n.language || "fr");
+  const titleRefs = useRef<(HTMLHeadingElement | null)[]>([]);
+  const linkRefs = useRef<(HTMLAnchorElement | HTMLButtonElement | null)[]>([]);
+  const mobileMenuBgRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     document.body.style.overflow = mobileMenuOpen ? "hidden" : "unset";
@@ -18,6 +22,7 @@ const Header: React.FC = () => {
       document.body.style.overflow = "unset";
     };
   }, [mobileMenuOpen]);
+  
 
   const toggleLanguage = () => {
     const newLang = lang === "fr" ? "en" : "fr";
@@ -30,6 +35,7 @@ const Header: React.FC = () => {
     { href: "/services", label: t("header.services") },
     { href: "/about", label: t("header.about") },
     { href: "/projects", label: t("header.projects") },
+    { href: "/idea", label: t("header.idea") },
   ];
 
   const socialLinks = [
@@ -39,6 +45,39 @@ const Header: React.FC = () => {
     { href: "/", label: "Facebook" },
   ];
 
+  // Effet GSAP pour l'animation des titres et liens
+  useEffect(() => {
+    if (isLoaded) {
+      gsap.fromTo(
+        titleRefs.current,
+        { y: "-100%", opacity: 0 },
+        { y: "0%", opacity: 1, duration: 1.5, stagger: 0.2, ease: "power3.out" }
+      );
+
+      gsap.fromTo(
+        linkRefs.current,
+        { y: "100%", opacity: 0 },
+        { y: "0%", opacity: 1, duration: 1.5, stagger: 0.2, ease: "power3.out" }
+      );
+    }
+  }, [isLoaded]);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
+  // Animation du background lors de l'ouverture/fermeture du menu mobile
+  useEffect(() => {
+    if (mobileMenuOpen && mobileMenuBgRef.current) {
+      gsap.to(mobileMenuBgRef.current, { height: "100%", duration: 0.5, ease: "power3.out" });
+    } else if (mobileMenuBgRef.current) {
+      gsap.to(mobileMenuBgRef.current, { height: "0%", duration: 0.5, ease: "power3.in" });
+    }
+  }, [mobileMenuOpen]);
+
+  if (!isLoaded) return null;
+
+  
   return (
     <>
       {/* Navbar Desktop & Mobile */}
@@ -47,9 +86,12 @@ const Header: React.FC = () => {
         <div className="hidden sm:flex flex-col">
           <p className="mb-2">{t("header.quickLink")}</p>
           <ul className="flex">
-            {navigation.map(({ href, label }) => (
+            {navigation.map(({ href, label }, index) => (
               <li key={href} className="group relative mr-3">
                 <Link
+                  ref={(el) => {
+                    if (el) linkRefs.current[index] = el;
+                  }}
                   href={href}
                   className={`group relative py-1 transition-colors ${
                     pathname === href ? "text-white" : "text-gris/60"
@@ -71,6 +113,9 @@ const Header: React.FC = () => {
             {t("header.greeting")}
           </Link>
           <Link
+            ref={(el) => {
+              if (el) linkRefs.current[0] = el;
+            }}
             href="/"
             className={`transition-colors mb-1 ${
               pathname === "/" ? "text-white" : "text-gris/60"
@@ -90,6 +135,9 @@ const Header: React.FC = () => {
           <div className="flex items-center gap-4">
             {/* Button Lang Switch */}
             <button
+              ref={(el) => {
+                if (el) linkRefs.current[2] = el;
+              }}
               onClick={toggleLanguage}
               className="hover:text-gris/60 transition-colors"
             >
@@ -98,6 +146,9 @@ const Header: React.FC = () => {
 
             {/* Idea Link */}
             <Link
+              ref={(el) => {
+                if (el) linkRefs.current[3] = el;
+              }}
               href="/idea"
               className={`group relative transition-colors ${
                 pathname === "/idea" ? "text-white" : "text-gris/60"
@@ -125,23 +176,26 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 top-0 bg-grismobile z-40 flex flex-col p-4 sm:hidden">
+        <div
+          ref={mobileMenuBgRef}
+          className="fixed inset-0 top-0 bg-grismobile z-40 flex flex-col p-4 sm:hidden overflow-hidden"
+        >
           {/* Header */}
-          <div className=" justify-between items-center mb-8">
+          <div className="justify-between items-center mb-8">
             <div className="flex flex-col">
               <span className="text-gris/60">{t("header.greeting")}</span>
               <span className="text-white">Paul Roy</span>
-            </div>          
+            </div>
           </div>
 
           {/* Navigation Links */}
-          <div className="space-y-6">
+          <div className="space-y-6 flex-grow">
             {navigation.map(({ href, label }) => (
               <Link
                 key={href}
                 href={href}
                 className={`flex items-center text-lg font-mono transition-colors ${
-                  pathname === href ? "text-white" : "text-gray-400"
+                  pathname === href ? "text-white" : "text-gris/60"
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -158,52 +212,36 @@ const Header: React.FC = () => {
                     d="M9.95614 9.02338H8.33283C8.08933 9.02338 7.927 9.18571 7.927 9.42921V10.6467C7.927 10.8902 7.76467 11.0525 7.52117 11.0525H5.89785C5.65435 11.0525 5.49202 10.8902 5.49202 10.6467V9.42921C5.49202 9.18571 5.65435 9.02338 5.89785 9.02338H6.99359C7.50088 9.02338 7.927 8.63784 7.927 8.11027V7.40007C7.927 7.15657 8.08933 6.99424 8.33283 6.99424H9.95614C10.4431 6.99424 10.5649 6.38549 10.5649 5.99996C10.5649 5.61442 10.4431 5.00568 9.95614 5.00568H8.33283C8.08933 5.00568 7.927 4.84334 7.927 4.59985V3.88965C7.927 3.36207 7.50088 2.97653 6.99359 2.97653H5.89785C5.65435 2.97653 5.49202 2.8142 5.49202 2.5707V1.35322C5.49202 1.10972 5.65435 0.947388 5.89785 0.947388H7.52117C7.76467 0.947388 7.927 1.10972 7.927 1.35322V2.5707C7.927 2.8142 8.08933 2.97653 8.33283 2.97653H9.95614C10.1996 2.97653 10.362 3.13886 10.362 3.38236V4.07227C10.362 4.57956 10.7881 4.98538 11.2954 4.98538H12.594C12.8375 4.98538 12.9999 5.14772 12.9999 5.39121V6.6087C12.9999 6.8522 12.8375 7.01453 12.594 7.01453H11.2954C10.7881 7.01453 10.362 7.42036 10.362 7.92764V8.61755C10.362 8.86105 10.1996 9.02338 9.95614 9.02338Z"
                     fill="currentColor"
                   ></path>
-                  <path
-                    d="M0.5 5.2563H8.04289C8.2871 5.2563 8.4499 5.37938 8.4499 5.564V6.4717C8.4499 6.65632 8.2871 6.7794 8.04289 6.7794H0.5C0.255789 6.7794 0.0929826 6.65632 0.0929826 6.4717V5.564C0.0929826 5.37938 0.255789 5.2563 0.5 5.2563Z"
-                    fill="currentColor"
-                  ></path>
                 </svg>
-                {label}
-              </Link>
-            ))} 
-            <Link
-              href="/idea"
-              className="flex items-center text-lg font-mono text-gray-400 transition-colors sm:hidden"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-5 mr-2 md:hidden"
-                  viewBox="0 0 13 12"
-                  fill="none"
-                  preserveAspectRatio="xMidYMid meet"
-                  aria-hidden="true"
-                  role="img"
-                >
-                  <path
-                    d="M9.95614 9.02338H8.33283C8.08933 9.02338 7.927 9.18571 7.927 9.42921V10.6467C7.927 10.8902 7.76467 11.0525 7.52117 11.0525H5.89785C5.65435 11.0525 5.49202 10.8902 5.49202 10.6467V9.42921C5.49202 9.18571 5.65435 9.02338 5.89785 9.02338H6.99359C7.50088 9.02338 7.927 8.63784 7.927 8.11027V7.40007C7.927 7.15657 8.08933 6.99424 8.33283 6.99424H9.95614C10.4431 6.99424 10.5649 6.38549 10.5649 5.99996C10.5649 5.61442 10.4431 5.00568 9.95614 5.00568H8.33283C8.08933 5.00568 7.927 4.84334 7.927 4.59985V3.88965C7.927 3.36207 7.50088 2.97653 6.99359 2.97653H5.89785C5.65435 2.97653 5.49202 2.8142 5.49202 2.5707V1.35322C5.49202 1.10972 5.65435 0.947388 5.89785 0.947388H7.52117C7.76467 0.947388 7.927 1.10972 7.927 1.35322V2.5707C7.927 2.8142 8.08933 2.97653 8.33283 2.97653H9.95614C10.1996 2.97653 10.362 3.13886 10.362 3.38236V4.07227C10.362 4.57956 10.7881 4.98538 11.2954 4.98538H12.594C12.8375 4.98538 12.9999 5.14772 12.9999 5.39121V6.6087C12.9999 6.8522 12.8375 7.01453 12.594 7.01453H11.2954C10.7881 7.01453 10.362 7.42036 10.362 7.92764V8.61755C10.362 8.86105 10.1996 9.02338 9.95614 9.02338Z"
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M0.5 5.2563H8.04289C8.2871 5.2563 8.4499 5.37938 8.4499 5.564V6.4717C8.4499 6.65632 8.2871 6.7794 8.04289 6.7794H0.5C0.255789 6.7794 0.0929826 6.65632 0.0929826 6.4717V5.564C0.0929826 5.37938 0.255789 5.2563 0.5 5.2563Z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-              {t("header.idea")}
-            </Link>
-          </div>
-
-          {/* Social Links */}
-          <div className="mt-auto mb-4 flex flex-wrap gap-x-4 gap-y-2 text-xs">
-            {socialLinks.map(({ href, label }) => (
-              <Link
-                key={label}
-                href={href}
-                className="text-gris/60 hover:text-white transition-colors"
-              >
                 {label}
               </Link>
             ))}
+          </div>
+
+          {/* Social Links - Ajoutés en bas du menu mobile */}
+          <div className="mt-auto pt-8 border-t border-gris/20">
+            <div className="flex justify-center gap-4">
+              {socialLinks.map(({ href, label }) => (
+                <Link
+                  key={label}
+                  href={href}
+                  className="text-gris/60 hover:text-white transition-colors text-sm flex items-center"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  
+                  {label}
+                </Link>
+                
+              ))}
+               <button
+                onClick={() => {
+                  toggleLanguage();
+                }}
+                className="text-gris/60 hover:text-white transition-colors text-sm"
+              >
+                {lang.toUpperCase()}
+              </button>
+            </div>
           </div>
         </div>
       )}

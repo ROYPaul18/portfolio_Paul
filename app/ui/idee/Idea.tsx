@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
+
 const Idea = () => {
   const { t } = useTranslation("common");
 
@@ -14,8 +15,9 @@ const Idea = () => {
     name: "",
     email: "",
     company: "",
+    number: "",
     website: "",
-    projectDetails: "",
+    projectDescription: "",
   });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -27,32 +29,53 @@ const Idea = () => {
     setError(null);
     setSuccess(false);
 
+    // Préparation des données
     const requestData = {
-      ...formData,
+      name: formData.name?.trim() || "",
+      email: formData.email?.trim() || "",
+      company: formData.company?.trim() || "",
+      number: formData.number?.trim() || "",
+      website: formData.website?.trim() || "",
+      projectDescription: formData.projectDescription?.trim() || "",
       category: selectedCategory || "",
       budget: selectedBudget || "",
       pages: selectedPages || "",
       delay: selectedDelay || "",
     };
 
-    console.log("Données envoyées :", JSON.stringify(requestData, null, 2));
+    console.log("Données envoyées:", JSON.stringify(requestData, null, 2));
 
     try {
       const res = await fetch("/api/requests", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(requestData),
       });
 
-      if (!res.ok) throw new Error("Erreur API");
+      if (!res.ok) {
+        const errorText = await res.text();
+        let errorMessage;
+        try {
+          const errorJson = JSON.parse(errorText);
+          errorMessage = errorJson.error || `Erreur serveur: ${res.status}`;
+        } catch {
+          errorMessage = `Erreur serveur: ${res.status}`;
+        }
+        throw new Error(errorMessage);
+      }
 
+      await res.json();
+      // Succès
       setSuccess(true);
       setFormData({
         name: "",
         email: "",
         company: "",
         website: "",
-        projectDetails: "",
+        projectDescription: "",
+        number: "",
       });
       setSelectedCategory(null);
       setSelectedBudget(null);
@@ -60,8 +83,9 @@ const Idea = () => {
       setSelectedDelay(null);
 
       setTimeout(() => setSuccess(false), 3000);
-    } catch {
-      setError("Erreur d'envoi");
+    } catch (error) {
+      console.error("Erreur d'envoi du formulaire:", error);
+      setError(error instanceof Error ? error.message : "Erreur d'envoi");
     } finally {
       setLoading(false);
     }
@@ -74,9 +98,9 @@ const Idea = () => {
   };
 
   return (
-    <section className="text-white mt-20 px-4 2xl:px-8 sm:flex-col flex">
+    <section className="text-white mt-20 sm:flex-col flex">
       <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12">
-        <div className="flex flex-col justify-between lg:fixed top-12 2xl:top-24 mt-12 w-1/2">
+        <div className="flex flex-col justify-between lg:fixed pb-12 px-4 pt-8 2xl:px-12 md:pt-16 2xl:pt-24 md:pb-12">
           <h1 className="text-2xl md:text-3xl lg:text-5xl 2xl:text-8xl font-medium">
             {t("idea.contact")}
           </h1>
@@ -140,9 +164,6 @@ const Idea = () => {
             {t("idea.details")}
           </h2>
 
-        <p>
-          
-        </p>
           <form onSubmit={handleSubmit}>
             <p className="text-gris/60 mt-6 text-base 2xl:text-2xl">
               {" "}
@@ -228,7 +249,7 @@ const Idea = () => {
               {[
                 { label: t("idea.name_entreprise"), key: "name" },
                 { label: t("idea.your_email"), key: "email" },
-                { label: t("idea.your_number"), key: "numbers" },
+                { label: t("idea.your_number"), key: "number" },
                 { label: t("idea.company"), key: "company" },
                 { label: t("idea.website"), key: "website" },
               ].map(({ label, key }) => (
@@ -246,9 +267,9 @@ const Idea = () => {
               <textarea
                 placeholder={t("idea.projectDetails")}
                 className="w-full bg-deepblue text-blanc py-2 px-4 placeholder-gris/60 focus:outline-none text-sm 2xl:text-2xl border-b border-gris/60 h-24 resize-none"
-                value={formData.projectDetails}
+                value={formData.projectDescription}
                 onChange={(e) =>
-                  setFormData({ ...formData, projectDetails: e.target.value })
+                  setFormData({ ...formData, projectDescription: e.target.value })
                 }
               />
             </div>

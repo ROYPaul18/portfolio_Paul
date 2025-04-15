@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 // Define interface for service item props
 interface ServiceItemProps {
@@ -33,34 +32,34 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
 
   return (
     <div
-      className={`relative py-8 md:py-20 2xl:py-40 border-b border-gris/60 transition-opacity duration-300${
+      className={`relative py-8 md:py-20 2xl:py-40 border-b border-gris/60 transition-all duration-300 ${
         hoveredService && hoveredService !== index
-          ? "opacity-30"
-          : "opacity-100"
+          ? "brightness-50"
+          : "brightness-100"
       }`}
       onMouseEnter={() => setHoveredService(index)}
       onMouseLeave={() => setHoveredService(null)}
     >
-      <div className="">
-        <span
-          className="text-xs md:text-sm 2xl:text-xl text-gris/60 mr-8"
-        >
+      <div className="px-4 md:px-40">
+        {" "}
+        {/* Ajout d'un padding conditionnel */}
+        <span className="text-xs md:text-sm 2xl:text-xl text-gris/60 mr-8">
           [{t(number)}]
         </span>
       </div>
 
-      <div className="pl-8 md:pl-40">
+      <div className="px-4 md:px-40">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-0">
           <div className="hidden md:block md:col-span-1" />
-          <div className="col-span-1 md:col-span-5 flex flex-col justify-between px-4 h-full">
-            <h2
-              className="text-2xl md:text-3xl 2xl:text-7xl font-medium text-white leading-tight"
-            >
+
+          {/* Centrer le contenu sur mobile */}
+          <div className="col-span-1 md:col-span-5 flex flex-col justify-between h-full mx-auto md:mx-0">
+            <h2 className="text-2xl md:text-3xl 2xl:text-7xl font-medium text-white leading-tight">
               {t(type)}
             </h2>
 
             <div className="flex flex-col gap-10 md:gap-20">
-              <p className="text-xs md:text-sm 2xl:text-3xl text-gris/60 leading-relaxed ">
+              <p className="text-xs md:text-sm 2xl:text-3xl text-gris/60 leading-relaxed">
                 {t(subtitle)}
               </p>
               <div>
@@ -70,7 +69,7 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="size-6 2xl:size-8 mr-2 transition-colors group-hover:text-deepblue relative z-10"
+                    className="size-6 2xl:size-8 mr-2 transition-colors group-hover:text-deepblue relative z-10 animation-pulse-svg"
                     viewBox="0 0 13 12"
                     aria-hidden="true"
                     role="img"
@@ -93,8 +92,9 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
             </div>
           </div>
 
-          <div className="col-span-1 md:col-span-6 md:col-start-7 mt-8 md:mt-0">
-            <div className="aspect-[4/3] w-full md:w-3/4 mx-auto md:ml-auto">
+          <div className="col-span-1 md:col-span-6 md:col-start-7 mt-8 md:mt-0 flex justify-center">
+            {/* Centrer l'image uniquement sur mobile */}
+            <div className="aspect-[4/3] w-full mx-auto md:w-3/4 md:ml-auto">
               <Image
                 src={imageSrc}
                 alt={t(type)}

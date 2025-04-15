@@ -21,6 +21,7 @@ export default {
       },
       animation: {
         glitch: "glitch 0.8s infinite linear alternate-reverse",
+        'border-grow': 'border-grow 0.5s ease-out forwards', // Correction du tiret
       },
       keyframes: {
         glitch: {
@@ -30,6 +31,15 @@ export default {
           "75%": { transform: "translate(-1px, 1px)" },
           "100%": { transform: "translate(1px, -1px)" },
         },
+        pulseSvg: {
+          '0%, 100%': { color: 'white' },
+          '50%': { color: 'rgba(255, 255, 255, 0.6)' }, 
+        },
+        // Ajout des keyframes pour border-grow
+        'border-grow': {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
+        }
       },
     },
   },

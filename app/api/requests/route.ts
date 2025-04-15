@@ -1,33 +1,31 @@
-import { NextRequest } from "next/server";
+// api/requests/route.ts
 import { db } from "@/lib/db";
+import { NextResponse } from "next/server";
 
-const createErrorResponse = (message: string, status: number = 400) => {
-  return new Response(
-    JSON.stringify({ error: message }),
-    {
-      status,
-      headers: { "Content-Type": "application/json" },
-    }
-  );
-};
-
-export async function POST(req: NextRequest) {
+export async function POST(req: Request) {
   try {
-    // Lire le body de la requête
-    let data;
-    try {
-      data = await req.json();
-      if (!data || typeof data !== "object") {
-        return createErrorResponse("Données invalides ou manquantes");
-      }
-    } catch {
-      return createErrorResponse("Format de données invalide");
+    // Vérification du corps de la requête
+    if (!req.body) {
+      return NextResponse.json({ error: "Empty request body" }, { status: 400 });
     }
 
-    // Champs obligatoires
+    const data = await req.json();
+
+    if (!data || typeof data !== "object") {
+      return NextResponse.json({ error: "Invalid JSON payload" }, { status: 400 });
+    }
+
     const requiredFields = [
-      "name", "email", "company", "website", 
-      "projectDetails", "category", "budget", "pages", "delay", "number"
+      "name",
+      "email",
+      "company",
+      "website",
+      "projectDescription",
+      "number",
+      "category",
+      "budget",
+      "pages",
+      "delay",
     ];
 
     const missingFields = requiredFields.filter(
@@ -35,53 +33,35 @@ export async function POST(req: NextRequest) {
     );
 
     if (missingFields.length > 0) {
-      return createErrorResponse(
-        `Champs obligatoires manquants : ${missingFields.join(", ")}`
+      return NextResponse.json(
+        {
+          error: `Missing required fields: ${missingFields.join(", ")}`,
+        },
+        { status: 400 }
       );
     }
 
-    // Validation email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(data.email)) {
-      return createErrorResponse("Format d'email invalide");
-    }
-
-    // Enregistrement en base
     const newRequest = await db.request.create({
       data: {
-        name: data.name.trim(),
-        email: data.email.trim().toLowerCase(),
-        company: data.company.trim(),
-        website: data.website.trim(),
-        projectDescription: data.projectDetails.trim(),
-        number: data.number.trim(),
-        category: data.category.trim(),
-        budget: data.budget.trim(),
-        pages: data.pages.trim(),
-        delay: data.delay.trim(),
+        name: data.name?.toString().trim() ?? "",
+        email: data.email?.toString().trim().toLowerCase() ?? "",
+        company: data.company?.toString().trim() ?? "",
+        website: data.website?.toString().trim() ?? "",
+        projectDescription: data.projectDescription?.toString().trim() ?? "",
+        number: data.number?.toString().trim() ?? "",
+        category: data.category?.toString().trim() ?? "",
+        budget: data.budget?.toString().trim() ?? "",
+        pages: data.pages?.toString().trim() ?? "",
+        delay: data.delay?.toString().trim() ?? "",
       },
     });
 
-    return new Response(
-      JSON.stringify({
-        message: "Demande enregistrée avec succès",
-        request: newRequest,
-      }),
-      {
-        status: 201,
-        headers: { "Content-Type": "application/json" },
-      }
-    );
+    return NextResponse.json(newRequest, { status: 201 });
   } catch (error) {
-    console.error("Erreur serveur:", error);
-
-    if (error instanceof Error && "code" in error && error.code === "P2002") {
-      return createErrorResponse("Une entrée avec ces données existe déjà", 409);
-    }
-
-    return createErrorResponse(
-      "Erreur serveur interne, veuillez réessayer plus tard",
-      500
+    console.error("API error:", error);
+    return NextResponse.json(
+      { error: "An error occurred while processing the request." },
+      { status: 500 }
     );
   }
 }
