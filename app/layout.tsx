@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Geist, Geist_Mono, Figtree } from "next/font/google";
 import "./globals.css";
 import { I18nProvider } from "./providers/i18nProvider"
-
+import { Analytics } from '@vercel/analytics/next';
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -19,6 +19,9 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/favicon.ico",
+  },
   title: "Développeur Web Freelance à Bourges | Paul Roy",
   description:
     "Développeur freelance spécialisé en sites vitrines et applications web sur-mesure à Bourges (Cher). Création de sites performants et modernes pour professionnels.",
@@ -71,7 +74,7 @@ export default function RootLayout({
         <I18nProvider>
         {children}
         </I18nProvider>
-
+      <Analytics />
       </body>
     </html>
   );
