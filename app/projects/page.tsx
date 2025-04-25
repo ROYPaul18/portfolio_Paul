@@ -50,8 +50,7 @@ const Page = () => {
                 </span>
                 <span className="absolute left-0 bottom-0 w-0 h-full bg-white transition-all duration-700 ease-in-out group-hover:w-full"></span>
               </Link>
-              <Link
-                href="/idea"
+              <Link href="/Paul_ROY_CV.pdf"
                 className="group relative text-sm md:text-base 2xl:text-3xl flex items-center transition-colors"
                 download
               >

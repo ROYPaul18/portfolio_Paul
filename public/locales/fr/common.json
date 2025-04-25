@@ -25,6 +25,7 @@
     "links": "Liens",
     "home": "Accueil",
     "about": "À propos",
+    "project": "Projets",
     "idea": "Une idée en tête ?",
     "services": "Mes services",
     "siteVitrine": "Site vitrine",
@@ -190,13 +191,13 @@
     "maintenance": "Maintenance & mises à jour (optionnel)",
     "evolutions": "Possibilité de mises à jour et d'évolutions selon les besoins du client",
     "title": "Mon approche pour votre projet",
-    "description": "Je suis prêt à vous aider ! Que vous souhaitiez lancer un nouveau projet, améliorer votre site existant, demander un devis ou discuter d’une collaboration potentielle, n’hésitez pas à me contacter."
+    "description": "Je suis prêt à vous aider ! Que vous souhaitiez lancer un nouveau projet, améliorer votre site existant, demander un devis ou discuter d'une collaboration potentielle, n'hésitez pas à me contacter."
   },
   "service": {
     "site_vitrine": "Site vitrine",
     "application_web": "Application Web",
     "ready_to_help_app": "Boostez votre présence en ligne avec des applications performantes et sur mesure.Spécialisé en Next.js et Node.js, je développe des applications web rapides, optimisées pour le SEO et conçues pour offrir une expérience utilisateur fluide et engageante. Mon objectif ? Créer des solutions digitales qui captivent, convertissent et vous démarquent de la concurrence. Découvrez mes services et voyons ensemble comment propulser votre projet au niveau supérieur.",
-    "ready_to_help_site": "Donnez à votre entreprise une vitrine en ligne moderne et impactante. Spécialisé en Next.js et Node.js, je conçois des sites vitrines rapides, sécurisés et optimisés pour le SEO. Mon objectif ? Vous offrir une présence en ligne professionnelle qui capte l’attention, engage vos visiteurs et renforce votre crédibilité. Découvrez mes services et créons ensemble un site à la hauteur de votre image."
+    "ready_to_help_site": "Donnez à votre entreprise une vitrine en ligne moderne et impactante. Spécialisé en Next.js et Node.js, je conçois des sites vitrines rapides, sécurisés et optimisés pour le SEO. Mon objectif ? Vous offrir une présence en ligne professionnelle qui capte l'attention, engage vos visiteurs et renforce votre crédibilité. Découvrez mes services et créons ensemble un site à la hauteur de votre image."
   },
   "project": {
     "title": {
@@ -230,8 +231,8 @@
   },
   "about": {
     "title": "À propos — Je suis Paul, un développeur Web freelance, dédié à aider les entreprises à libérer leur potentiel de croissance.",
-    "subtitle_1": " Depuis mes années de lycée, je suis passionné par le développement web, et aujourd’hui, je me spécialise dans la création d’expériences web sur mesure adaptées aux besoins de chaque client. Ce qui m’anime, c’est de proposer les meilleures solutions digitales aux entreprises en combinant créativité et expertise technique.",
-    "subtitle_2": "Depuis que j’ai commencé mon activité de freelance il y a trois mois, j’ai eu l’opportunité de collaborer avec deux clients professionnels, en les accompagnant dans la réalisation de leurs projets numériques. Mon objectif est d’aider les entreprises à atteindre leurs ambitions grâce à des solutions personnalisées et efficaces. À travers chaque projet, je cherche à dépasser les attentes et à créer un impact durable.",
+    "subtitle_1": " Depuis mes années de lycée, je suis passionné par le développement web, et aujourd'hui, je me spécialise dans la création d'expériences web sur mesure adaptées aux besoins de chaque client. Ce qui m'anime, c'est de proposer les meilleures solutions digitales aux entreprises en combinant créativité et expertise technique.",
+    "subtitle_2": "Depuis que j'ai commencé mon activité de freelance il y a trois mois, j'ai eu l'opportunité de collaborer avec deux clients professionnels, en les accompagnant dans la réalisation de leurs projets numériques. Mon objectif est d'aider les entreprises à atteindre leurs ambitions grâce à des solutions personnalisées et efficaces. À travers chaque projet, je cherche à dépasser les attentes et à créer un impact durable.",
     "link_1": "Mon travail",
     "link_2": "Une idée ?",
     "link_3": "Mon CV",
@@ -298,5 +299,77 @@
     "subtitle": "Je transforme vos idées en expériences numériques captivantes, performantes et intuitives, conçues pour engager votre audience et faire grandir votre activité. Mon approche allie créativité et expertise technique afin de garantir un site web à la fois esthétique et parfaitement fonctionnel. L&apos;objectif : offrir une expérience utilisateur optimale, renforcer votre présence en ligne et vous aider à atteindre vos ambitions stratégiques. Créons ensemble quelque chose d&apos;exceptionnel !",
     "link": "Mes projets",
     "link2": "Une idée ?"
+  },
+  "privacy_policy": {
+    "title": "Politique de confidentialité",
+    "lastUpdate": "Dernière mise à jour : 25 avril 2025",
+    "intro": {
+      "responsible": "Responsable du site : Paul ROY",
+      "text": "La protection de vos données personnelles est une priorité. Cette politique de confidentialité vous informe sur les données collectées, leur utilisation et vos droits."
+    },
+    "dataCollected": {
+      "title": "Données collectées",
+      "form": {
+        "title": "Via le formulaire de contact",
+        "text": "Les données suivantes peuvent être collectées :",
+        "fields": [
+          "Nom",
+          "Adresse e-mail",
+          "Numéro de téléphone",
+          "Nom de l'entreprise",
+          "Adresse du site web",
+          "Description du projet"
+        ],
+        "usage": "Ces données sont utilisées uniquement pour vous répondre et échanger dans un cadre professionnel."
+      },
+      "analytics": {
+        "title": "Données de navigation",
+        "text": "Lors de votre visite, certaines informations sont collectées automatiquement via Next Analytics :",
+        "items": [
+          "Pages visitées",
+          "Adresse IP anonymisée",
+          "Type de navigateur",
+          "Durée de visite",
+          "Provenance géographique approximative"
+        ],
+        "usage": "Ces données sont utilisées à des fins statistiques pour améliorer l'expérience utilisateur."
+      }
+    },
+    "usage": {
+      "title": "Utilisation des données",
+      "list": [
+        "Répondre à vos demandes via le formulaire",
+        "Améliorer le contenu et la performance du site",
+        "Garantir la sécurité et le bon fonctionnement du site"
+      ]
+    },
+    "hosting": {
+      "title": "Hébergement et sous-traitants",
+      "text": "Le site est hébergé par Vercel, qui applique des standards de sécurité élevés et est conforme au RGPD. Vos données ne sont jamais revendues ni utilisées à des fins commerciales sans votre consentement."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "text": "Ce site peut utiliser des cookies anonymes à des fins de mesure d'audience (Next Analytics). Vous pouvez désactiver les cookies dans les paramètres de votre navigateur."
+    },
+    "retention": {
+      "title": "Conservation des données",
+      "text": "Les données envoyées via le formulaire de contact sont conservées pour une durée maximale de 12 mois, sauf demande de suppression anticipée."
+    },
+    "rights": {
+      "title": "Vos droits",
+      "text": "Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :",
+      "list": [
+        "Droit d'accès à vos données",
+        "Droit de rectification",
+        "Droit à l'effacement",
+        "Droit à la limitation du traitement",
+        "Droit d'opposition"
+      ],
+      "contact": "Pour exercer vos droits, contactez-moi à : {{email}}"
+    },
+    "contact": {
+      "title": "Contact",
+      "text": "Pour toute question concernant cette politique de confidentialité, vous pouvez me contacter à : {{email}}"
+    }
   }
 }

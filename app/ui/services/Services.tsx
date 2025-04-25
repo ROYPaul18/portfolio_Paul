@@ -199,7 +199,7 @@ const Services = () => {
                 {t("service_page.subtitle_1_pt_2")}
               </p>
               <Link
-                href="/services/application-web"
+                href="/services/site-vitrine"
                 className="group relative inline-flex items-center gap-2 mt-4 md:mt-6 text-base md:text-base 2xl:text-2xl py-1 transition-colors"
               >
                 <svg
@@ -226,7 +226,7 @@ const Services = () => {
             </div>
           </div>
 
-          {/* Deuxième service - Site Vitrine */}
+          {/* Deuxième service - App */}
           <div 
          ref={(el) => {
             if (el) serviceRefs.current[1] = el;
@@ -244,7 +244,7 @@ const Services = () => {
                 {t("service_page.subtitle_2_pt_2")}
               </p>
               <Link
-                href="/services/site-vitrine"
+                href="/services/application-web"
                 className="group relative inline-flex items-center gap-2 mt-4 md:mt-6 text-base md:text-base 2xl:text-2xl py-1 transition-colors ml-0 md:ml-12 w-full"
               >
                 <svg

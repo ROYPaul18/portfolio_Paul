@@ -23,6 +23,7 @@
     "lk": "Linkdin",
     "gt": "Github",
     "links": "Links",
+    "project": "Projects",
     "home": "Home",
     "about": "About",
     "idea": "Got an idea?",
@@ -281,5 +282,77 @@
     "subtitle": "I transform your ideas into captivating, high-performing, and intuitive digital experiences designed to engage your audience and grow your business. My approach combines creativity and technical expertise to ensure a website that is both aesthetically pleasing and perfectly functional. The goal: to provide an optimal user experience, strengthen your online presence, and help you achieve your strategic ambitions. Let's create something exceptional together!",
     "link": "My projects",
     "link2": "Got an idea?"
+  },
+  "privacy_policy": {
+    "title": "Privacy Policy",
+    "lastUpdate": "Last updated: April 25, 2025",
+    "intro": {
+      "responsible": "Site owner: Paul ROY",
+      "text": "Protecting your personal data is a priority. This privacy policy explains what data is collected, how it is used, and your rights."
+    },
+    "dataCollected": {
+      "title": "Data Collected",
+      "form": {
+        "title": "Through the contact form",
+        "text": "The following data may be collected:",
+        "fields": [
+          "Name",
+          "Email address",
+          "Phone number",
+          "Company name",
+          "Website address",
+          "Project description"
+        ],
+        "usage": "This data is used solely to respond to you and communicate in a professional context."
+      },
+      "analytics": {
+        "title": "Browsing data",
+        "text": "During your visit, certain information is automatically collected via Next Analytics:",
+        "items": [
+          "Visited pages",
+          "Anonymized IP address",
+          "Browser type",
+          "Visit duration",
+          "Approximate geographical location"
+        ],
+        "usage": "This data is used for statistical purposes to improve user experience."
+      }
+    },
+    "usage": {
+      "title": "Use of Data",
+      "list": [
+        "Responding to your contact requests",
+        "Improving site content and performance",
+        "Ensuring site security and proper functioning"
+      ]
+    },
+    "hosting": {
+      "title": "Hosting and third parties",
+      "text": "This site is hosted by Vercel, which follows high security standards and complies with GDPR. Your data is never sold or used for commercial purposes without your consent."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "text": "This site may use anonymous cookies for audience measurement (Next Analytics). You can disable cookies in your browser settings."
+    },
+    "retention": {
+      "title": "Data Retention",
+      "text": "Data sent through the contact form is retained for a maximum of 12 months, unless you request earlier deletion."
+    },
+    "rights": {
+      "title": "Your Rights",
+      "text": "In accordance with the General Data Protection Regulation (GDPR), you have the following rights:",
+      "list": [
+        "Right of access to your data",
+        "Right to rectification",
+        "Right to erasure",
+        "Right to restrict processing",
+        "Right to object"
+      ],
+      "contact": "To exercise your rights, please contact me at: {{email}}"
+    },
+    "contact": {
+      "title": "Contact",
+      "text": "For any questions regarding this privacy policy, you can reach me at: {{email}}"
+    }
   }
 }
