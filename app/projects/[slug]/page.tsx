@@ -58,6 +58,20 @@ const ProjectPage = () => {
         images: ["/img/projects/devoteam5.webp", "/img/projects/devoteam4.webp", "/img/projects/devoteam3.webp"],
         link: "",
       },
+      "link": {
+        type: t("best_project.project_3_type"),
+        name: t("best_project.project_3_name"),
+        techno: t("best_project.project_2_techno", {
+          returnObjects: true,
+        }) as string[],
+        fonctionnalites: t("best_project.project_3_fonctionnalitées", {
+          returnObjects: true,
+        }) as string[],
+        description: t("best_project.project_3_description"),
+        image: "/img/projects/Link.png",
+        images: ["/img/projects/link2.png", "/img/projects/link3.png", "/img/projects/link4.png"],
+        link: "https://www.salon-link.fr",
+      },
     };
 
     // Set the current project based on the slug

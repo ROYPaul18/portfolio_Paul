@@ -9,7 +9,7 @@
     "name": "Paul ROY",
     "greeting": "Hello, my name is",
     "dispo": "Available for a new project",
-    "quickLink":"Quick Link"
+    "quickLink": "Quick Link"
   },
   "footer": {
     "info": "That's all for now",
@@ -41,10 +41,10 @@
     "idea": "any idea? Let's talk about it",
     "email": "roypaul.18.pr@gmail.com",
     "discover": "Discover myself",
-    "job1":"FREELANCE",
-    "job2":"WEB",
-    "job3":"DEVELOPPER",
-    "sub":"Creation of high-performance, modern and optimized websites for your business."
+    "job1": "FREELANCE",
+    "job2": "WEB",
+    "job3": "DEVELOPPER",
+    "sub": "Creation of high-performance, modern and optimized websites for your business."
   },
   "prejob": {
     "title": {
@@ -73,6 +73,13 @@
     "description_pt1": "I developed an interactive dashboard to visualize and analyze attrition trends in the Devoteam company, supervised by a doctoral student.",
     "description_pt2": "Using randomized data, I designed dynamic graphs to identify precise correlations (seniority, departments, types of contracts).",
     "description_pt3": "The project includes the creation of models on Figma and development with React (front-end) and Node.js (back-end). This work strengthened my skills in data visualization, web development, and complex project management."
+  },
+  "project_home_3": {
+    "name": "L'ink",
+    "type": "Showcase Website",
+    "description_pt1": "Created an interactive showcase website to present the unique world of Gaël’s tattoo studio, located in Soye-en-Septaine.",
+    "description_pt2": "This studio stands out for its warm and multi-purpose atmosphere: in addition to tattooing, visitors can enjoy a reading corner, a coffee area, board games, as well as services offered by a nail technician and a piercer.",
+    "description_pt3": "Website goals: reflect the visual identity and welcoming atmosphere of the studio, present the various services and team members, and highlight the core values of the place — friendliness, creativity, and accessibility."
   },
   "preservice": {
     "info": "What you can expect from me:",
@@ -158,10 +165,22 @@
       "Dark Mode",
       "Filter by Country, Age Group, Gender, Date Range"
     ],
-    "project_3_type": "Webflow Development",
-    "project_3_name": "Imvizar",
-    "project_3_slug": "imvizar",
-    "project_3_description": "Immersive storytelling experiences using augmented reality. Blending technology and storytelling for unforgettable journeys that captivate and engage audiences."
+    "project_3_type": "Showcase website",
+    "project_3_name": "Link",
+    "project_3_slug": "link",
+    "project_3_description": "Created an interactive showcase website to present the unique atmosphere of Gaël’s tattoo studio, located in Soye-en-Septaine.",
+    "project_3_techno": [
+      "Typescript",
+      "Next, React",
+      "Tailwindcss",
+      "Prisma",
+      "PostgreSQL"
+    ],
+    "project_3_fonctionnalities": [
+      "Tattoo artist management",
+      "Event management",
+      "Admin dashboard"
+    ]
   },
   "approach": {
     "apprendre": "Learn who you are",
@@ -254,7 +273,7 @@
     "project": "Your website address",
     "your_name": "Tell me about your project",
     "submit": "Submit",
-    "your_number":"Your number",
+    "your_number": "Your number",
     "sending": "Sending...",
     "success": "Request sent successfully!",
     "error": "Sending error",

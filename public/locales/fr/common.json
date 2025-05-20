@@ -44,7 +44,7 @@
     "job1": "DEVELOPPEUR",
     "job2": "WEB",
     "job3": "FREELANCE",
-    "sub":"Création de sites web performants, modernes et optimisés pour votre business."
+    "sub": "Création de sites web performants, modernes et optimisés pour votre business."
   },
   "prejob": {
     "title": {
@@ -72,6 +72,13 @@
     "description_pt1": "J'ai développé un tableau de bord interactif pour visualiser et analyser les tendances d'attrition au sein de l'entreprise Devoteam, sous la supervision d'un doctorant.",
     "description_pt2": "En utilisant des données randomisées, j'ai conçu des graphiques dynamiques pour identifier des corrélations précises (ancienneté, départements, types de contrats).",
     "description_pt3": "Le projet inclut la création de maquettes sur Figma et un développement avec React (front-end) et Node.js (back-end). Ce travail a renforcé mes compétences en visualisation de données, développement web et gestion de projets complexes."
+  },
+  "project_home_3": {
+    "name": "L'ink",
+    "type": "Site Vitrine ",
+    "description_pt1": "Création d’un site vitrine interactif pour présenter l’univers unique du salon de Gaël, tatoueur installé à Soye-en-Septaine.",
+    "description_pt2": "Ce salon se distingue par son ambiance chaleureuse et multi-activités : en plus du tatouage, les visiteurs peuvent profiter d’un coin lecture, d’un espace café, de jeux de société, ainsi que des prestations d’une ongleriste et d’un pierceur.",
+    "description_pt3": "Objectifs du site : refléter l’identité visuelle et l’atmosphère accueillante du salon, présenter les différents services et membres de l’équipe, et mettre en avant les valeurs du lieu : convivialité, créativité, accessibilité."
   },
   "preservice": {
     "info": "Ce que vous pouvez attendre de moi :",
@@ -157,10 +164,10 @@
       "Dark Mode",
       "Filtre par Pays, Tranche d'âge, Sexe, Tranche de dates"
     ],
-    "project_3_type": "Développement Webflow",
-    "project_3_name": "Imvizar",
-    "project_3_slug": "imvizar",
-    "project_3_description": "Expériences de narration immersive utilisant la réalité augmentée. Alliant technologie et narration pour des voyages inoubliables qui captivent et engagent les audiences.",
+    "project_3_type": "Site vitrine",
+    "project_3_name": "Link",
+    "project_3_slug": "link",
+    "project_3_description": "Création d’un site vitrine interactif pour présenter l’univers unique du salon de Gaël, tatoueur installé à Soye-en-Septaine.",
     "project_3_techno": [
       "Typescript",
       "Next, React",
@@ -169,12 +176,9 @@
       "PostgreSQL"
     ],
     "project_3_fonctionnalitées": [
-      "Gestion des utilisateurs",
-      "Gestion des services",
-      "Tableau de bord administrateur",
-      "Prise de rendez-vous",
-      "Système d'avis",
-      "Gestion des horaires d'ouverture"
+      "Gestion des tatoueurs",
+      "Gestion d'événements",
+      "Tableau de bord administrateur"
     ]
   },
   "approach": {
@@ -275,7 +279,7 @@
     "success": "Demande envoyée avec succès !",
     "error": "Erreur d'envoi",
     "name": "Votre nom",
-    "your_number":"Votre numéro",
+    "your_number": "Votre numéro",
     "email": "Votre e-mail",
     "company": "Nom de votre entreprise",
     "website": "Adresse de votre site",

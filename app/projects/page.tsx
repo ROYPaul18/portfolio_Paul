@@ -52,7 +52,7 @@ const Page = () => {
               </Link>
               <Link href="/Paul_ROY_CV.pdf"
                 className="group relative text-sm md:text-base 2xl:text-3xl flex items-center transition-colors"
-                download
+                download  
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

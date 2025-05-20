@@ -53,6 +53,13 @@ const BestProject = () => {
       description: t("best_project.project_2_description"),
       image: "/img/projects/devoteam.png",
     },
+    {
+      slug: t("best_project.project_3_slug"),
+      name: t("best_project.project_3_name"),
+      type: t("best_project.project_3_type"),
+      description: t("best_project.project_3_description"),
+      image: "/img/projects/Link.png",
+    },
   ];
 
   return (
