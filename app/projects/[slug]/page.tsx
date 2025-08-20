@@ -42,7 +42,7 @@ const ProjectPage = () => {
           "/img/projects/beaudy-ink3.webp",
           "/img/projects/beaudy-ink4.webp",
         ],
-        link: "https://beaudy-ink.com",
+        link: "https://beady-ink.vercel.app/",
       },
       "dashboard-devoteam": {
         type: t("best_project.project_2_type"),
